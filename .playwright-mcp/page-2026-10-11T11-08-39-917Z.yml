@@ -1,0 +1,64 @@
+- generic [active] [ref=e1]:
+  - banner:
+    - navigation [ref=e2]:
+      - link "T THINKLOOM" [ref=e3] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e4]: T
+        - generic [ref=e5]: THINKLOOM
+      - generic [ref=e8]:
+        - link "Universe" [ref=e9] [cursor=pointer]:
+          - /url: "#"
+        - link "Selected Work" [ref=e10] [cursor=pointer]:
+          - /url: "#work"
+        - link "How I Create" [ref=e11] [cursor=pointer]:
+          - /url: "#process"
+        - link "Capabilities" [ref=e12] [cursor=pointer]:
+          - /url: "#services"
+        - link "About" [ref=e13] [cursor=pointer]:
+          - /url: "#about"
+        - link "Contact" [ref=e14] [cursor=pointer]:
+          - /url: "#contact"
+      - link "Start a Project" [ref=e16] [cursor=pointer]:
+        - /url: "#contact"
+  - generic [ref=e21]: Loading ThinkLoom...
+  - contentinfo [ref=e25]:
+    - generic [ref=e26]:
+      - generic [ref=e27]:
+        - generic [ref=e28]:
+          - generic [ref=e29]:
+            - generic [ref=e30]: T
+            - generic [ref=e31]: THINKLOOM
+          - paragraph [ref=e33]: Anith / ThinkLoom — Experimental 3D art universe and creative studio crafting brand identities, advertising posters, retail jewellery systems, and motion visuals.
+          - generic [ref=e34]: Available for Select Client Commissions // 2026
+        - generic [ref=e37]:
+          - generic [ref=e38]: Index
+          - list [ref=e39]:
+            - listitem [ref=e40]:
+              - link "Selected Work" [ref=e41] [cursor=pointer]:
+                - /url: "#work"
+            - listitem [ref=e42]:
+              - link "About Anith" [ref=e43] [cursor=pointer]:
+                - /url: "#about"
+            - listitem [ref=e44]:
+              - link "Capabilities & Services" [ref=e45] [cursor=pointer]:
+                - /url: "#services"
+            - listitem [ref=e46]:
+              - link "Interactive 3D Lab" [ref=e47] [cursor=pointer]:
+                - /url: "#playground"
+            - listitem [ref=e48]:
+              - link "Contact & Collaborate" [ref=e49] [cursor=pointer]:
+                - /url: "#contact"
+        - generic [ref=e50]:
+          - generic [ref=e51]: Direct Contact
+          - list [ref=e52]:
+            - listitem [ref=e53]:
+              - link "hello@thinkloom.design" [ref=e54] [cursor=pointer]:
+                - /url: mailto:hello@thinkloom.design
+            - listitem [ref=e55]:
+              - link "+91 98421 43307" [ref=e56] [cursor=pointer]:
+                - /url: https://wa.me/919842143307?text=Hi%20Anith,%20I'd%20like%20to%20discuss%20a%20design%20project%20with%20ThinkLoom
+            - listitem [ref=e57]: Tamil Nadu, India • Worldwide Commissions
+      - generic [ref=e58]:
+        - generic [ref=e59]: © 2026 Anith / ThinkLoom Creative Studio. All rights reserved.
+        - button "Back to Summit" [ref=e60] [cursor=pointer]
+  - alert [ref=e64]
