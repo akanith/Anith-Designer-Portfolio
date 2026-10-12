@@ -36,6 +36,7 @@ const config: Config = {
         sans: ["var(--font-sans)", "system-ui", "-apple-system", "sans-serif"],
         display: ["var(--font-display)", "system-ui", "sans-serif"],
         mono: ["var(--font-mono)", "monospace"],
+        brush: ["var(--font-brush)", "cursive"],
       },
       letterSpacing: {
         tightest: "-0.04em",

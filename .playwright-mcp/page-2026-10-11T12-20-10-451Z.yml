@@ -1,0 +1,496 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "THINKLOOM STUDIO®" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e5]: THINKLOOM
+        - generic [ref=e6]: STUDIO®
+      - generic [ref=e7]: CONTEMPORARY GRAPHIC DESIGN // 2026
+      - generic [ref=e10]:
+        - navigation [ref=e11]:
+          - link "Work" [ref=e12] [cursor=pointer]:
+            - /url: "#work"
+          - link "Focus" [ref=e13] [cursor=pointer]:
+            - /url: "#focus"
+          - link "Approach" [ref=e14] [cursor=pointer]:
+            - /url: "#approach"
+          - link "Services" [ref=e15] [cursor=pointer]:
+            - /url: "#services"
+          - link "About" [ref=e16] [cursor=pointer]:
+            - /url: "#about"
+          - link "Contact" [ref=e17] [cursor=pointer]:
+            - /url: "#contact"
+        - link "Start Project" [ref=e18] [cursor=pointer]:
+          - /url: "#contact"
+  - main [ref=e24]:
+    - generic [ref=e25]:
+      - generic [ref=e27]:
+        - generic [ref=e28]: THINKLOOM — INDEPENDENT GRAPHIC DESIGN STUDIO
+        - generic [ref=e31]:
+          - generic [ref=e32]: "LOC: TAMIL NADU, INDIA"
+          - generic [ref=e33]: Available for Select Commissions • 2026
+      - generic [ref=e37]:
+        - generic [ref=e38]:
+          - generic [ref=e39]: "[ 2026 EDITORIAL ARCHIVE ]"
+          - heading "DESIGN THAT MAKES YOU LOOK TWICE." [level=1] [ref=e41]
+          - paragraph [ref=e42]: ThinkLoom creates visual identities, campaign posters, product advertisements, and digital creative.
+          - paragraph [ref=e43]: Grounded in experimental Swiss typography, tactile print principles, and high-voltage visual culture—sculpting graphics that arrest the eye and build enduring cultural weight.
+          - generic [ref=e44]:
+            - button "View Selected Work" [ref=e45] [cursor=pointer]
+            - button "Start a Project" [ref=e49] [cursor=pointer]
+          - generic [ref=e54]:
+            - generic [ref=e55]: "FOCUS:"
+            - generic [ref=e56]: Brand Identity
+            - generic [ref=e57]: Campaign Posters
+            - generic [ref=e58]: Product Ads
+            - generic [ref=e59]: Retail Collateral
+        - generic [ref=e60]:
+          - generic [ref=e61] [cursor=pointer]:
+            - img "Ramyas Jeweller Festive Gold Savings Scheme" [ref=e63]
+            - generic [ref=e64]:
+              - generic [ref=e65]: RAMYAS JEWELLER
+              - generic [ref=e66]: "2024"
+          - generic [ref=e67] [cursor=pointer]:
+            - generic [ref=e68]:
+              - generic [ref=e69]: EXHIBIT 01 // POSTER
+              - generic [ref=e70]: SPEC [4:5]
+            - img "Messiah Sports Performance Grip Socks Campaign" [ref=e72]
+            - generic [ref=e73]:
+              - generic [ref=e74]: SMALL GEAR. BIG DIFFERENCE.
+              - generic [ref=e75]: ↗
+          - generic [ref=e76] [cursor=pointer]:
+            - img "Swanzaa Luxury Fashion Couture Monogram" [ref=e78]
+            - generic [ref=e79]:
+              - generic [ref=e80]: SWANZAA COUTURE
+              - generic [ref=e81]: IDENTITY
+          - generic [ref=e82]:
+            - img "Blue Waves FC Sports Crest" [ref=e84]
+            - generic [ref=e85]: CLUB CREST // FOOTBALL
+          - generic: "[+] REGISTRATION: BEHANCE 2026 // THINKLOOM STUDIO"
+      - generic [ref=e87]:
+        - generic [ref=e88]:
+          - generic [ref=e89]: 01 // INTRODUCTION
+          - generic [ref=e90]: •
+          - generic [ref=e91]: REAL COMMISSIONS ARCHIVE
+        - generic [ref=e92]:
+          - generic [ref=e93]: SCROLL FOR CHAPTER 02
+          - generic [ref=e94]: ↓
+    - generic [ref=e96]:
+      - generic [ref=e97]:
+        - generic [ref=e98]:
+          - generic [ref=e99]: // CHAPTER 02 — SELECTED WORK
+          - heading "ACTUAL WORK. CURATED ARCHIVE." [level=2] [ref=e102]
+        - generic [ref=e103]:
+          - paragraph [ref=e104]: Every piece showcased here is real, deployed commercial artwork—from jewellery passbook systems to athletic compression campaigns and luxury fashion marks.
+          - generic [ref=e105]:
+            - button "Editorial Flow" [ref=e106] [cursor=pointer]
+            - button "Catalog Grid" [ref=e110] [cursor=pointer]
+      - generic [ref=e117]:
+        - button "All Work" [ref=e118] [cursor=pointer]
+        - button "Brand Identity & Logo Design" [ref=e119] [cursor=pointer]
+        - button "Social Media & Advertising Posters" [ref=e120] [cursor=pointer]
+        - button "Jewellery Branding — Ramyas Jeweller" [ref=e121] [cursor=pointer]
+        - button "Sports Branding — Messiah Sports" [ref=e122] [cursor=pointer]
+        - button "AI Video & Motion Design" [ref=e123] [cursor=pointer]
+        - button "Creative Experiments" [ref=e124] [cursor=pointer]
+      - generic [ref=e125]:
+        - generic [ref=e126] [cursor=pointer]:
+          - generic [ref=e127]:
+            - generic [ref=e128]:
+              - generic [ref=e129]: "[ EXHIBIT 01 ]"
+              - generic [ref=e130]: MESSIAH SPORTS
+            - generic [ref=e131]: ATHLETIC COMPRESSION CAMPAIGN // 2024
+          - generic [ref=e132]:
+            - generic [ref=e133]:
+              - generic [ref=e134]:
+                - generic [ref=e135]: Campaign Direction & Product Staging
+                - heading "SMALL GEAR. BIG DIFFERENCE." [level=3] [ref=e136]
+                - paragraph [ref=e137]: A high-impact product campaign elevating athletic compression gear through tactile studio staging and focused benefit callouts.
+                - generic [ref=e138]:
+                  - generic [ref=e139]: Architectural stone pedestal art direction
+                  - generic [ref=e142]: Ergonomic benefit badges & specification layout
+                  - generic [ref=e145]: Omnichannel digital ad system
+              - generic [ref=e148]: Inspect Case Study
+            - img "Messiah Sports Socks Campaign Poster" [ref=e157]
+        - generic [ref=e158] [cursor=pointer]:
+          - generic [ref=e159]:
+            - generic [ref=e160]:
+              - generic [ref=e161]: "[ EXHIBIT 02 ]"
+              - generic [ref=e162]: RAMYAS JEWELLER
+            - generic [ref=e163]: 4-PAGE FESTIVE SAVINGS PASSBOOK SPREAD // DINDIGUL
+          - generic [ref=e164]:
+            - generic [ref=e165]: தீபாவளி சிறுசேமிப்பு திட்டம் // FESTIVAL COLLATERAL
+            - heading "FESTIVE DIWALI GOLD SAVINGS SYSTEM." [level=3] [ref=e166]
+            - paragraph [ref=e167]: A comprehensive 4-page promotional passbook and customer onboarding system merging traditional golden Tamil typography with clean tabular ledger architecture.
+          - img "Ramyas Jeweller 4-Page Diwali Savings Scheme Brochure" [ref=e169]
+          - generic [ref=e170]:
+            - generic [ref=e171]: "SPREAD: COVER • QR ONBOARDING • MONTHLY TABLE • ₹13,000 MATURITY"
+            - generic [ref=e173]: VIEW COMPLETE COLLATERAL KIT →
+        - generic [ref=e175] [cursor=pointer]:
+          - generic [ref=e176]:
+            - generic [ref=e177]:
+              - generic [ref=e178]: "[ EXHIBIT 09 ]"
+              - generic [ref=e179]: CEREMONIAL DESIGN
+            - img "Pretty Makeover Ceremonial Invitation" [ref=e181]
+            - heading "PRETTY MAKEOVER" [level=4] [ref=e182]
+            - paragraph [ref=e183]: Opulent ceremonial housewarming invitation featuring traditional temple architecture.
+          - generic [ref=e184]: VIEW DETAILS →
+    - generic [ref=e186]:
+      - generic [ref=e187]:
+        - generic [ref=e188]:
+          - generic [ref=e189]: // CHAPTER 03 — BRAND IN FOCUS
+          - heading "DEEP COMMISSIONS. ECOSYSTEM ARCHITECTURE." [level=2] [ref=e192]
+        - paragraph [ref=e193]: A deeper dive into multi-asset brand ecosystems developed from initial strategic identity to full omnichannel retail and athletic collateral.
+      - generic [ref=e194]:
+        - generic [ref=e195]:
+          - generic [ref=e196]:
+            - generic [ref=e197]:
+              - generic [ref=e198]: "[ CASE STUDY 01 ]"
+              - generic [ref=e199]: RAMYAS JEWELLER
+            - generic [ref=e200]: RETAIL LUXURY & TAMIL TYPOGRAPHY // 2024
+          - generic [ref=e201]:
+            - generic [ref=e202]:
+              - generic [ref=e203]: Heritage Retail System
+              - heading "THE GOLDEN TEMPLE ECOSYSTEM." [level=3] [ref=e204]
+              - paragraph [ref=e205]: Ramyas Jeweller required an authentic, trust-building visual system that spoke directly to regional heritage while executing modern digital retail publishing.
+              - generic [ref=e206]:
+                - generic [ref=e207]:
+                  - strong [ref=e208]: "Festive Savings Passbook:"
+                  - text: A 4-page customer onboarding spread coordinating QR payments, installment ledgers, and maturity rewards.
+                - generic [ref=e209]:
+                  - strong [ref=e210]: "Daily Market Bulletins:"
+                  - text: High-frequency daily gold & silver price updates designed for rapid showroom publishing and instant WhatsApp customer distribution.
+                - generic [ref=e211]:
+                  - strong [ref=e212]: "Sacred Tamil Letterforms:"
+                  - text: Custom Tamil typography paired with the sculpted golden vel and peacock monogram insignia.
+              - link "View Ramyas Collateral in Archive" [ref=e214] [cursor=pointer]:
+                - /url: "#work"
+            - generic [ref=e219]:
+              - generic [ref=e220]:
+                - img "Ramyas Jeweller Diwali Savings Festival Poster" [ref=e221]
+                - generic [ref=e222]: தீபாவளி சிறுசேமிப்பு FESTIVAL POSTER
+              - generic [ref=e223]:
+                - img "Ramyas Jeweller July 8 Gold Rate Bulletin" [ref=e224]
+                - generic [ref=e225]: DAILY MARKET RATE BULLETIN
+        - generic [ref=e226]:
+          - generic [ref=e227]:
+            - generic [ref=e228]:
+              - generic [ref=e229]: "[ CASE STUDY 02 ]"
+              - generic [ref=e230]: MESSIAH SPORTS
+            - generic [ref=e231]: ATHLETIC BRAND IDENTITY & ADVERTISING // 2024
+          - generic [ref=e232]:
+            - generic [ref=e233]:
+              - generic [ref=e234]: Athletic Performance System
+              - heading "THE DISCIPLINE OF SMALL GEAR." [level=3] [ref=e235]
+              - paragraph [ref=e236]: Messiah Sports required a complete brand transformation—from initial shield crest design to product launch posters and packaging specification boards.
+              - generic [ref=e237]:
+                - generic [ref=e238]:
+                  - strong [ref=e239]: "Grip Socks Campaign:"
+                  - text: Tactile studio staging on stone pedestals positioning everyday gear as vital athletic equipment.
+                - generic [ref=e240]:
+                  - strong [ref=e241]: "Multi-Angle Tech Board:"
+                  - text: Exploded specification board breaking down silicone grip pads, anatomical compression, and retail packaging.
+                - generic [ref=e242]:
+                  - strong [ref=e243]: "Emblem Shield Mark:"
+                  - text: Minimalist geometric 'MS' crest engineered for jersey embroidery, footwear stamping, and digital apps.
+              - link "View Messiah Sports in Archive" [ref=e245] [cursor=pointer]:
+                - /url: "#work"
+            - generic [ref=e250]:
+              - generic [ref=e251]:
+                - img "Messiah Sports Technical Specification Board" [ref=e252]
+                - generic [ref=e253]: TECHNICAL SPECIFICATION BOARD
+              - generic [ref=e254]:
+                - img "Messiah Sports Master Brand Identity" [ref=e255]
+                - generic [ref=e256]: SHIELD CREST & TYPOGRAPHY SYSTEM
+    - generic [ref=e258]:
+      - generic [ref=e259]:
+        - generic [ref=e260]:
+          - generic [ref=e261]:
+            - generic [ref=e262]: // CHAPTER 04 — CREATIVE APPROACH
+            - heading "UNDERSTAND → EXPLORE DESIGN → REFINE → DELIVER." [level=2] [ref=e265]
+          - paragraph [ref=e266]: A five-stage Swiss editorial methodology that transforms raw strategic intent into definitive, gallery-grade graphic design.
+        - generic [ref=e267]:
+          - generic [ref=e268]:
+            - generic [ref=e269]:
+              - generic [ref=e270]:
+                - generic [ref=e271]: PHASE 01
+                - generic [ref=e272]: 01/05
+              - heading "UNDERSTAND" [level=3] [ref=e273]
+              - generic [ref=e274]: Strategic Foundation
+              - paragraph [ref=e275]: Deconstructing brand tension, market category, and audience psychology before touching a single pixel.
+            - generic [ref=e276]:
+              - generic [ref=e277]: "OUTPUT:"
+              - generic [ref=e278]: Strategic Angle Brief
+          - generic [ref=e279]:
+            - generic [ref=e280]:
+              - generic [ref=e281]:
+                - generic [ref=e282]: PHASE 02
+                - generic [ref=e283]: 02/05
+              - heading "EXPLORE" [level=3] [ref=e284]
+              - generic [ref=e285]: Visual Divergence
+              - paragraph [ref=e286]: Developing bold typographic systems, asymmetrical layouts, and unexpected color palettes.
+            - generic [ref=e287]:
+              - generic [ref=e288]: "OUTPUT:"
+              - generic [ref=e289]: Directional Style Frames
+          - generic [ref=e290]:
+            - generic [ref=e291]:
+              - generic [ref=e292]:
+                - generic [ref=e293]: PHASE 03
+                - generic [ref=e294]: 03/05
+              - heading "DESIGN" [level=3] [ref=e295]
+              - generic [ref=e296]: Uncompromising Craft
+              - paragraph [ref=e297]: Obsessing over grid geometry, micro-typography, paper textures, and tactile print presence.
+            - generic [ref=e298]:
+              - generic [ref=e299]: "OUTPUT:"
+              - generic [ref=e300]: Master Artwork Assets
+          - generic [ref=e301]:
+            - generic [ref=e302]:
+              - generic [ref=e303]:
+                - generic [ref=e304]: PHASE 04
+                - generic [ref=e305]: 04/05
+              - heading "REFINE" [level=3] [ref=e306]
+              - generic [ref=e307]: Stress Testing
+              - paragraph [ref=e308]: Testing contrast, legibility, and physical scale across mobile glass and commercial print tolerances.
+            - generic [ref=e309]:
+              - generic [ref=e310]: "OUTPUT:"
+              - generic [ref=e311]: Refinement & Adjustments
+          - generic [ref=e312]:
+            - generic [ref=e313]:
+              - generic [ref=e314]:
+                - generic [ref=e315]: PHASE 05
+                - generic [ref=e316]: 05/05
+              - heading "DELIVER" [level=3] [ref=e317]
+              - generic [ref=e318]: Omnichannel Deployment
+              - paragraph [ref=e319]: Packaging clean master vector files (AI, SVG, PDF), web rasters, and modular usage guidelines.
+            - generic [ref=e320]:
+              - generic [ref=e321]: "OUTPUT:"
+              - generic [ref=e322]: Master Production Kit
+      - generic [ref=e323]:
+        - generic [ref=e324]:
+          - generic [ref=e325]:
+            - generic [ref=e326]: // CHAPTER 05 — CAPABILITIES
+            - heading "DISCIPLINES & PRODUCTION SCOPE." [level=2] [ref=e329]
+          - paragraph [ref=e330]: Targeted creative engagements tailored for founders, retail showrooms, athletic labels, and cultural curators.
+        - generic [ref=e331]:
+          - generic [ref=e332]:
+            - button "01 Brand Identity & Logo Systems Primary marks, monogram crests, bespoke typography, and modular brand architectures." [ref=e333] [cursor=pointer]:
+              - generic [ref=e334]:
+                - generic [ref=e335]: "01"
+                - generic [ref=e336]:
+                  - heading "Brand Identity & Logo Systems" [level=3] [ref=e337]
+                  - paragraph [ref=e338]: Primary marks, monogram crests, bespoke typography, and modular brand architectures.
+            - generic [ref=e342]:
+              - generic [ref=e343]:
+                - generic [ref=e344]: // Scope & Impact
+                - paragraph [ref=e345]: We engineer visual identities that feel inevitable. From luxury fashion monograms to regional retail insignias and athletic shields, we develop complete vector systems that anchor brand equity for years.
+                - link "Commission This Discipline" [ref=e346] [cursor=pointer]:
+                  - /url: "#contact"
+              - generic [ref=e351]:
+                - generic [ref=e352]: // Production Deliverables
+                - list [ref=e353]:
+                  - listitem [ref=e354]:
+                    - generic [ref=e358]: Primary Brandmark & Monogram
+                  - listitem [ref=e359]:
+                    - generic [ref=e363]: Vector Emblem & Favicon Suite
+                  - listitem [ref=e364]:
+                    - generic [ref=e368]: Typography Hierarchy & Color Tokens
+                  - listitem [ref=e369]:
+                    - generic [ref=e373]: Packaging & Merchandise Prototypes
+                  - listitem [ref=e374]:
+                    - generic [ref=e378]: Master Vector Production Kits (AI, SVG, PDF)
+          - button "02 Poster & Campaign Art Direction Large-format advertising posters and seasonal campaign creative engineered to stop scrolls." [ref=e380] [cursor=pointer]:
+            - generic [ref=e381]:
+              - generic [ref=e382]: "02"
+              - generic [ref=e383]:
+                - heading "Poster & Campaign Art Direction" [level=3] [ref=e384]
+                - paragraph [ref=e385]: Large-format advertising posters and seasonal campaign creative engineered to stop scrolls.
+          - button "03 Product Advertising & Studio Staging Commercial visuals elevating consumer products through tactile physical staging." [ref=e389] [cursor=pointer]:
+            - generic [ref=e390]:
+              - generic [ref=e391]: "03"
+              - generic [ref=e392]:
+                - heading "Product Advertising & Studio Staging" [level=3] [ref=e393]
+                - paragraph [ref=e394]: Commercial visuals elevating consumer products through tactile physical staging.
+          - button "04 Social Media Creatives & Rate Bulletins Agile, high-frequency digital posters maintaining gallery polish across daily feeds." [ref=e398] [cursor=pointer]:
+            - generic [ref=e399]:
+              - generic [ref=e400]: "04"
+              - generic [ref=e401]:
+                - heading "Social Media Creatives & Rate Bulletins" [level=3] [ref=e402]
+                - paragraph [ref=e403]: Agile, high-frequency digital posters maintaining gallery polish across daily feeds.
+          - button "05 AI-Assisted Promotional Video & Motion Next-generation promotional motion narratives and kinetic typography pacing." [ref=e407] [cursor=pointer]:
+            - generic [ref=e408]:
+              - generic [ref=e409]: "05"
+              - generic [ref=e410]:
+                - heading "AI-Assisted Promotional Video & Motion" [level=3] [ref=e411]
+                - paragraph [ref=e412]: Next-generation promotional motion narratives and kinetic typography pacing.
+    - generic [ref=e417]:
+      - generic [ref=e418]:
+        - generic [ref=e419]: // EXPERIMENTAL 3D LAB
+        - heading "INTERACTIVE 3D & SHADING PLAYGROUND." [level=2] [ref=e422]
+      - paragraph [ref=e423]: Test real-time geometry forms, procedural surface shaders, and studio lighting setups rendered dynamically in your browser.
+    - generic [ref=e427]:
+      - generic [ref=e428]:
+        - generic [ref=e429]:
+          - generic [ref=e430]: // ANITH / THINKLOOM STUDIO
+          - heading "GOOD DESIGN IS IMMEDIATE. GREAT DESIGN LINGERS." [level=2] [ref=e433]
+        - paragraph [ref=e434]: Independent graphic designer and art director turning ambitious business propositions into unmistakable visual identities.
+      - generic [ref=e435]:
+        - generic [ref=e436]:
+          - generic [ref=e437]: "[ STUDIO MANIFESTO ]"
+          - generic [ref=e438]:
+            - paragraph [ref=e439]:
+              - text: Operating under the creative label
+              - strong [ref=e440]: ThinkLoom
+              - text: ", I am"
+              - strong [ref=e441]: Anith
+              - text: ", an independent graphic designer and art director based in Tamil Nadu, collaborating with brands globally."
+            - paragraph [ref=e442]: My work is driven by the conviction that graphic design is not merely decoration—it is the strategic voice, stature, and physical presence of an organization. From sacred temple gold campaigns to high-velocity athletic branding, every asset is crafted with obsessive typographic control.
+            - paragraph [ref=e443]: By synthesizing experimental Swiss typography, tactile print materiality, and contemporary digital pacing, ThinkLoom creates visuals that command attention in crowded contemporary markets.
+          - generic [ref=e444]:
+            - link "Initiate a Commission" [ref=e445] [cursor=pointer]:
+              - /url: "#contact"
+            - link "Direct WhatsApp Chat" [ref=e450] [cursor=pointer]:
+              - /url: https://wa.me/919842143307?text=Hi%20Anith,%20I'd%20like%20to%20discuss%20a%20graphic%20design%20project%20with%20ThinkLoom
+        - generic [ref=e452]:
+          - generic [ref=e453]:
+            - generic [ref=e454]: PRINCIPLE 01
+            - heading "Typographic Gravity" [level=4] [ref=e455]
+            - paragraph [ref=e456]: Letterforms dictate cadence, authority, and emotional resonance. No generic typefaces; every pairing is engineered with deliberate tension.
+          - generic [ref=e457]:
+            - generic [ref=e458]: PRINCIPLE 02
+            - heading "Tactile Materiality" [level=4] [ref=e459]
+            - paragraph [ref=e460]: Even on glowing smartphone glass, graphics must feel physically printed—with weight, paper tooth, directional light, and ink depth.
+          - generic [ref=e461]:
+            - generic [ref=e462]: PRINCIPLE 03
+            - heading "Cultural Weight" [level=4] [ref=e463]
+            - paragraph [ref=e464]: Honoring local linguistic and cultural roots while commanding world-class aesthetic execution on international stages.
+      - generic [ref=e465]:
+        - generic [ref=e466]:
+          - generic [ref=e467]: // PRODUCTION SYSTEMS & SOFTWARE CAPABILITIES
+          - generic [ref=e468]: DEPLOYED WORKFLOWS
+        - generic [ref=e469]:
+          - generic [ref=e470]:
+            - generic [ref=e471]: SYS-01
+            - generic [ref=e474]: Adobe Illustrator
+            - generic [ref=e475]: Vector Architecture & Identity Systems
+          - generic [ref=e476]:
+            - generic [ref=e477]: SYS-02
+            - generic [ref=e480]: Adobe Photoshop
+            - generic [ref=e481]: High-Resolution Retouching & Staging
+          - generic [ref=e482]:
+            - generic [ref=e483]: SYS-03
+            - generic [ref=e486]: Adobe After Effects
+            - generic [ref=e487]: Kinetic Swiss Typography & Motion
+          - generic [ref=e488]:
+            - generic [ref=e489]: SYS-04
+            - generic [ref=e492]: Figma
+            - generic [ref=e493]: Design Systems & Modular Layouts
+          - generic [ref=e494]:
+            - generic [ref=e495]: SYS-05
+            - generic [ref=e498]: Blender 3D
+            - generic [ref=e499]: Product Modeling & Studio Lighting
+          - generic [ref=e500]:
+            - generic [ref=e501]: SYS-06
+            - generic [ref=e504]: Generative AI / ComfyUI
+            - generic [ref=e505]: Concept Visuals & Dynamic Textures
+          - generic [ref=e506]:
+            - generic [ref=e507]: SYS-07
+            - generic [ref=e510]: Three.js / WebGL
+            - generic [ref=e511]: Spatial Interaction & Web Shaders
+          - generic [ref=e512]:
+            - generic [ref=e513]: SYS-08
+            - generic [ref=e516]: Next.js / TypeScript
+            - generic [ref=e517]: Creative Front-End Engineering
+    - generic [ref=e519]:
+      - generic [ref=e520]:
+        - generic [ref=e521]:
+          - generic [ref=e522]: // CHAPTER 06 — LET'S CREATE
+          - heading "HAVE AN IDEA? LET’S GIVE IT A WORLD." [level=2] [ref=e525]
+        - paragraph [ref=e526]: Currently accepting select client commissions for brand identity, campaign posters, retail systems, and creative direction.
+      - generic [ref=e527]:
+        - generic [ref=e528]:
+          - generic [ref=e529]:
+            - generic [ref=e530]: OFFICIAL STUDIO EMAIL
+            - link "hello@thinkloom.design" [ref=e531] [cursor=pointer]:
+              - /url: mailto:hello@thinkloom.design
+            - paragraph [ref=e532]: Direct portfolio & commission inquiries. Project briefs and RFP scopes welcomed.
+          - generic [ref=e533]:
+            - generic [ref=e534]: DIRECT WHATSAPP DESK
+            - link "+91 98421 43307" [ref=e537] [cursor=pointer]:
+              - /url: https://wa.me/919842143307?text=Hi%20Anith,%20I'd%20like%20to%20discuss%20a%20graphic%20design%20project%20with%20ThinkLoom
+            - paragraph [ref=e538]: Available for fast project consultation, asset review, and direct brief discussion.
+          - generic [ref=e539]:
+            - generic [ref=e540]: LOCATION & TIME ZONE
+            - generic [ref=e541]: Tamil Nadu, India • Worldwide Commissions
+            - paragraph [ref=e542]: Seamless digital workflows across India, Middle East, Europe, and international client locations.
+        - generic [ref=e543]:
+          - generic [ref=e544]:
+            - generic [ref=e545]: // PROJECT BRIEF INITIATOR
+            - generic [ref=e546]: CONFIDENTIAL & DIRECT
+          - generic [ref=e547]:
+            - generic [ref=e548]:
+              - generic [ref=e549]:
+                - generic [ref=e550]: Your Name / Brand *
+                - textbox "e.g. John Doe / Studio Label" [ref=e551]
+              - generic [ref=e552]:
+                - generic [ref=e553]: Email Address *
+                - textbox "e.g. contact@brand.com" [ref=e554]
+            - generic [ref=e555]:
+              - generic [ref=e556]: Primary Creative Discipline
+              - combobox [ref=e557]:
+                - option "Brand Identity & Logo Systems" [selected]
+                - option "Poster & Campaign Art Direction"
+                - option "Product Advertising & Staging"
+                - option "Retail Collateral & Savings Schemes"
+                - option "Sports Branding & Apparel Graphics"
+                - option "Invitations & Ceremonial Design"
+                - option "AI-Assisted Promotional Motion"
+            - generic [ref=e558]:
+              - generic [ref=e559]: Project Vision & Timelines *
+              - textbox "Describe your brand challenge, target deliverables, launch date, or reference direction..." [ref=e560]
+            - generic [ref=e561]:
+              - generic [ref=e562]: ⚡ Instant WhatsApp redirect on dispatch
+              - button "Send Brief & Start" [ref=e563] [cursor=pointer]
+  - contentinfo [ref=e568]:
+    - generic [ref=e569]:
+      - generic [ref=e570]:
+        - generic [ref=e571]:
+          - generic [ref=e572]:
+            - generic [ref=e573]: THINKLOOM
+            - generic [ref=e574]: STUDIO®
+          - paragraph [ref=e575]: Anith / ThinkLoom — Independent graphic design & art direction studio creating visual identities, campaign posters, product advertisements, and digital creative.
+          - generic [ref=e576]: Available for Select Client Commissions // 2026
+        - generic [ref=e579]:
+          - generic [ref=e580]: INDEX
+          - list [ref=e581]:
+            - listitem [ref=e582]:
+              - link "01. Selected Work" [ref=e583] [cursor=pointer]:
+                - /url: "#work"
+            - listitem [ref=e584]:
+              - link "02. Brand in Focus" [ref=e585] [cursor=pointer]:
+                - /url: "#focus"
+            - listitem [ref=e586]:
+              - link "03. Creative Approach" [ref=e587] [cursor=pointer]:
+                - /url: "#approach"
+            - listitem [ref=e588]:
+              - link "04. Capabilities & Scope" [ref=e589] [cursor=pointer]:
+                - /url: "#services"
+            - listitem [ref=e590]:
+              - link "05. About Anith" [ref=e591] [cursor=pointer]:
+                - /url: "#about"
+            - listitem [ref=e592]:
+              - link "06. Contact Desk" [ref=e593] [cursor=pointer]:
+                - /url: "#contact"
+        - generic [ref=e594]:
+          - generic [ref=e595]: COMMISSIONS & DESK
+          - list [ref=e596]:
+            - listitem [ref=e597]:
+              - link "hello@thinkloom.design" [ref=e598] [cursor=pointer]:
+                - /url: mailto:hello@thinkloom.design
+            - listitem [ref=e599]:
+              - link "+91 98421 43307" [ref=e600] [cursor=pointer]:
+                - /url: https://wa.me/919842143307?text=Hi%20Anith,%20I'd%20like%20to%20discuss%20a%20graphic%20design%20project%20with%20ThinkLoom
+            - listitem [ref=e601]: Tamil Nadu, India • Worldwide Commissions
+      - generic [ref=e602]:
+        - generic [ref=e603]: © 2026 ThinkLoom Creative Studio / Anith. All rights reserved.
+        - button "Back to Top" [ref=e604] [cursor=pointer]
+  - alert [ref=e608]

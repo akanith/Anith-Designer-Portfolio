@@ -17,18 +17,18 @@ export const siteConfig = {
     "I am Anith, an independent designer operating through ThinkLoom. I construct visual systems that fuse rigorous brand strategy with expressive art direction—turning ambitious concepts into tangible reality.",
   contactHeadline: "HAVE AN IDEA? LET'S GIVE IT A WORLD.",
   contact: {
-    email: "hello@thinkloom.design",
-    displayEmail: "hello@thinkloom.design",
-    phone: "+91 98421 43307",
+    email: "akanith1105@gmail.com",
+    displayEmail: "akanith1105@gmail.com",
+    phone: "+91 87781 73681",
     whatsapp:
-      "https://wa.me/919842143307?text=Hi%20Anith,%20I'd%20like%20to%20discuss%20a%20design%20project%20with%20ThinkLoom",
-    whatsappDisplay: "+91 98421 43307",
+      "https://wa.me/918778173681?text=Hi%20Anith,%20I'd%20like%20to%20discuss%20a%20design%20project%20with%20ThinkLoom",
+    whatsappDisplay: "+91 87781 73681",
     location: "Tamil Nadu, India • Worldwide Commissions",
     availability: "Available for Select Commissions • 2026",
     socials: {
-      instagram: "https://instagram.com/thinkloom.studio",
-      linkedin: "https://linkedin.com/company/thinkloom",
-      behance: "https://behance.net/thinkloom",
+      instagram: "https://www.instagram.com/anxth__11/",
+      linkedin: "https://www.linkedin.com/in/ak-anith",
+      behance: "https://www.behance.net/akanith",
     },
   },
   navigation: [

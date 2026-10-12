@@ -27,7 +27,7 @@ export default function ContactSection() {
     const text = encodeURIComponent(
       `Hi Anith / ThinkLoom,\n\nName: ${name}\nEmail: ${email}\nService: ${selectedService}\n\nProject details: ${message}`
     );
-    window.open(`https://wa.me/919842143307?text=${text}`, "_blank");
+    window.open(`https://wa.me/918778173681?text=${text}`, "_blank");
     setSubmitted(true);
   };
 

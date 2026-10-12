@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, Outfit, JetBrains_Mono } from "next/font/google";
+import { Plus_Jakarta_Sans, Outfit, JetBrains_Mono, Caveat } from "next/font/google";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import CustomCursor from "@/components/ui/CustomCursor";
@@ -24,10 +24,16 @@ const mono = JetBrains_Mono({
   display: "swap",
 });
 
+const brush = Caveat({
+  subsets: ["latin"],
+  variable: "--font-brush",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://thinkloom.design"),
   title: {
-    default: `${siteConfig.designer} / ${siteConfig.brand} — Experimental 3D Designer Portfolio`,
+    default: `${siteConfig.designer} / ${siteConfig.brand} — Graphic Design & Visual Storyteller Portfolio`,
     template: `%s | ${siteConfig.brand}`,
   },
   description: `${siteConfig.heroHeadline} ${siteConfig.heroSupporting}`,
@@ -80,7 +86,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${sans.variable} ${display.variable} ${mono.variable} scroll-smooth`}>
+    <html lang="en" className={`${sans.variable} ${display.variable} ${mono.variable} ${brush.variable} scroll-smooth`}>
       <body className="font-sans min-h-screen bg-canvas text-ink antialiased relative selection:bg-accent-coral selection:text-white">
         {/* Custom pointer cursor for desktop */}
         <CustomCursor />
@@ -93,9 +99,6 @@ export default function RootLayout({
 
         {/* Main Content */}
         <div className="relative z-10 w-full flex-grow">{children}</div>
-
-        {/* Studio Footer */}
-        <Footer />
       </body>
     </html>
   );

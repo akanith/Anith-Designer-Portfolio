@@ -1,35 +1,43 @@
-import React from "react";
-import Hero from "@/components/home/Hero";
-import StorytellingSection from "@/components/sections/StorytellingSection";
-import PortfolioGallery from "@/components/portfolio/PortfolioGallery";
-import ServicesSection from "@/components/sections/ServicesSection";
-import PlaygroundSection from "@/components/sections/PlaygroundSection";
-import AboutSection from "@/components/sections/AboutSection";
-import ContactSection from "@/components/sections/ContactSection";
+"use client";
+
+import React, { useState } from "react";
+import EditorialHero from "@/components/editorial/EditorialHero";
+import TornPaperStrip from "@/components/editorial/TornPaperStrip";
+import LogoGallery from "@/components/editorial/LogoGallery";
+import DarkShowcase from "@/components/editorial/DarkShowcase";
+import StudioAbout from "@/components/editorial/StudioAbout";
+import GraciasClosing from "@/components/editorial/GraciasClosing";
+import ProjectModal from "@/components/portfolio/ProjectModal";
+import { Project } from "@/types";
 
 export default function HomePage() {
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+
   return (
-    <main className="relative min-h-screen bg-canvas text-ink selection:bg-accent-coral selection:text-white">
-      {/* 1. Immersive Hero with 3D Centerpiece */}
-      <Hero />
+    <main className="relative min-h-screen bg-[#F5F2EB] text-neutral-900 selection:bg-accent-coral selection:text-white">
+      {/* 1. Introduction — Textured Editorial Hero (with Anith's actual photo) */}
+      <EditorialHero />
 
-      {/* 2. Scroll-Driven Storytelling & Philosophy */}
-      <StorytellingSection />
+      {/* 2. Torn-Paper Transition strip with white brush-script THINKLOOM */}
+      <TornPaperStrip />
 
-      {/* 3. Selected Work Editorial Gallery (Real Artwork Showcase) */}
-      <PortfolioGallery />
+      {/* 3. Logo and Brand Identity Gallery (bright editorial grid with real logos) */}
+      <LogoGallery onSelectProject={setSelectedProject} />
 
-      {/* 4. Interactive Services & Capabilities */}
-      <ServicesSection />
+      {/* 4. Dark Project Showcase — Match the video (charcoal/black editorial chapters) */}
+      <DarkShowcase onSelectProject={setSelectedProject} />
 
-      {/* 5. Interactive 3D & Shading Playground */}
-      <PlaygroundSection />
+      {/* 5. Studio and About Section (warm paper collage with authentic photos & manifesto) */}
+      <StudioAbout />
 
-      {/* 6. About Anith & ThinkLoom Studio */}
-      <AboutSection />
+      {/* 6. Contact and Closing Screen (Huge GRACIAS heading & verified contacts) */}
+      <GraciasClosing />
 
-      {/* 7. Memorable Closing Experience & Inquiry System */}
-      <ContactSection />
+      {/* Interactive Full-Screen Project Case Study Modal */}
+      <ProjectModal
+        project={selectedProject}
+        onClose={() => setSelectedProject(null)}
+      />
     </main>
   );
 }

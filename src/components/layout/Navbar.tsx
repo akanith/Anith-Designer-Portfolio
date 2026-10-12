@@ -20,11 +20,10 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { label: "Universe", href: "#" },
-    { label: "Selected Work", href: "#work" },
-    { label: "How I Create", href: "#process" },
-    { label: "Capabilities", href: "#services" },
-    { label: "About", href: "#about" },
+    { label: "Overview", href: "#" },
+    { label: "Logos & Brands", href: "#logos" },
+    { label: "Dark Showcase", href: "#dark-showcase" },
+    { label: "About Anith", href: "#about" },
     { label: "Contact", href: "#contact" },
   ];
 
@@ -35,26 +34,18 @@ export default function Navbar() {
           initial={{ y: -30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-          className={`pointer-events-auto flex items-center justify-between gap-4 sm:gap-8 rounded-full border transition-all duration-400 ${
+          className={`pointer-events-auto flex items-center justify-between md:justify-center gap-3 sm:gap-6 md:gap-3 rounded-full border transition-all duration-400 ${
             isScrolled
-              ? "bg-white/90 border-[#E5E5DF] px-5 sm:px-7 py-3 backdrop-blur-xl shadow-gallery"
-              : "bg-white/75 border-[#EAEAE4] px-6 sm:px-8 py-3.5 backdrop-blur-md shadow-sm"
-          } w-full max-w-5xl`}
+              ? "bg-white/90 border-[#E5E5DF] px-5 sm:px-6 py-2.5 backdrop-blur-xl shadow-gallery"
+              : "bg-white/80 border-[#EAEAE4] px-6 sm:px-7 py-3 backdrop-blur-md shadow-sm"
+          } w-full md:w-auto max-w-4xl`}
         >
-          {/* Brand Wordmark */}
+          {/* Mobile Brand Wordmark */}
           <Link
             href="/"
-            className="group flex items-center gap-2.5 font-display text-base sm:text-lg font-bold tracking-tight text-ink transition-opacity hover:opacity-90"
-            data-cursor="hover"
-            data-cursor-text="HOME"
+            className="md:hidden font-mono text-xs font-bold tracking-widest text-ink uppercase"
           >
-            <span className="flex h-6 w-6 items-center justify-center rounded-md bg-accent-cobalt text-white font-mono text-xs font-black shadow-sm">
-              T
-            </span>
-            <div className="flex items-center gap-1.5">
-              <span className="tracking-tighter font-extrabold text-ink">THINKLOOM</span>
-              <span className="h-1.5 w-1.5 rounded-full bg-accent-coral group-hover:scale-125 transition-transform" />
-            </div>
+            ANITH
           </Link>
 
           {/* Desktop Navigation Links */}
@@ -63,7 +54,7 @@ export default function Navbar() {
               <a
                 key={link.label}
                 href={link.href}
-                className="relative rounded-full px-3.5 py-1.5 text-ink-secondary transition-colors duration-200 hover:text-ink hover:bg-black/5"
+                className="relative whitespace-nowrap rounded-full px-3.5 py-1.5 text-ink-secondary transition-colors duration-200 hover:text-ink hover:bg-black/5"
                 data-cursor="hover"
               >
                 {link.label}
@@ -72,14 +63,14 @@ export default function Navbar() {
           </div>
 
           {/* Right Action: Start a Project Button & Mobile Toggle */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2">
             <a
               href="#contact"
-              className="group hidden sm:inline-flex items-center gap-2 rounded-full bg-ink px-4 sm:px-5 py-2 font-mono text-xs font-bold uppercase tracking-wider text-white transition-all duration-300 hover:bg-accent-cobalt hover:shadow-gallery hover:scale-[1.02] active:scale-[0.98]"
+              className="group hidden sm:inline-flex items-center gap-2 rounded-full bg-ink px-4 sm:px-5 py-2 font-mono text-xs font-bold uppercase tracking-wider text-white whitespace-nowrap transition-all duration-300 hover:bg-accent-cobalt hover:shadow-gallery hover:scale-[1.02] active:scale-[0.98]"
               data-cursor="hover"
               data-cursor-text="TALK"
             >
-              <span>Start a Project</span>
+              <span className="whitespace-nowrap">Start a Project</span>
               <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
 
@@ -108,7 +99,7 @@ export default function Navbar() {
             {/* Close button in drawer */}
             <div className="flex justify-between items-center border-b border-ink-border pb-6">
               <span className="font-mono text-xs uppercase tracking-widest text-accent-cobalt font-semibold">
-                {"// ThinkLoom Navigation"}
+                {"// Navigation"}
               </span>
               <button
                 onClick={() => setMobileMenuOpen(false)}

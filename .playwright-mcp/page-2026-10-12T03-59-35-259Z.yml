@@ -1,0 +1,390 @@
+- generic [active] [ref=e1]:
+  - banner:
+    - navigation [ref=e2]:
+      - link "ANITH" [ref=e3] [cursor=pointer]:
+        - /url: /
+      - button "Toggle mobile navigation menu" [ref=e5] [cursor=pointer]
+  - main [ref=e8]:
+    - generic [ref=e9]:
+      - generic:
+        - generic: +
+        - generic: +
+        - generic: +
+        - generic: +
+        - generic: ✻
+        - generic: ✦
+      - generic [ref=e10]:
+        - generic [ref=e11]: DESIGNER / CREATIVE / VISUAL STORYTELLER
+        - generic [ref=e15]:
+          - heading "PORTFOLIO" [level=1] [ref=e16]
+          - generic [ref=e17]: Anith
+          - generic [ref=e19]: THINKLOOM STUDIO
+        - paragraph [ref=e20]: “I'm Anith, a creative designer building bold visual identities, memorable posters, product campaigns, and digital experiences.”
+    - generic [ref=e27]:
+      - generic:
+        - img "Torn paper fibers"
+      - generic [ref=e28]:
+        - generic [ref=e29]: EST. THINKLOOM CREATIVE
+        - heading "ThinkLoom" [level=2] [ref=e33]
+        - generic [ref=e34]:
+          - generic [ref=e35]: DESIGN
+          - generic [ref=e36]: ×
+          - generic [ref=e37]: BRAND
+          - generic [ref=e38]: ×
+          - generic [ref=e39]: POSTERS
+          - generic [ref=e40]: ×
+          - generic [ref=e41]: CREATIVE CONTENT
+        - paragraph [ref=e42]: SCROLL DOWN TO ENTER THE EXHIBITION CHAPTERS
+    - generic [ref=e47]:
+      - generic [ref=e48]:
+        - generic [ref=e49]:
+          - generic [ref=e50]: SELECTED IDENTITIES
+          - heading "LOGOS & BRANDING" [level=2] [ref=e55]
+        - paragraph [ref=e57]: Distinctive identities. Thoughtful design. Brands built to be remembered.
+      - generic [ref=e58]:
+        - generic [ref=e59]:
+          - generic [ref=e60]: ORBIT ACTIVE // 30S CYCLE
+          - generic [ref=e65]:
+            - generic [ref=e66]: EXPLORE THE BRAND UNIVERSE ↗
+            - button "Pause orbit animation" [ref=e67] [cursor=pointer]
+        - region "Interactive Orbiting Brand Identities" [ref=e72]:
+          - generic [ref=e74]:
+            - generic [ref=e78]: BRAND UNIVERSE
+            - paragraph [ref=e79]: 8 CURATED IDENTITIES
+            - generic [ref=e80]: HOVER TO PAUSE • CLICK EMBLEM
+        - generic [ref=e82]:
+          - generic [ref=e83]: "SELECT IDENTITY:"
+          - button "ThinkLoom" [ref=e84] [cursor=pointer]
+          - button "Messiah Sports" [ref=e87] [cursor=pointer]
+          - button "Ramyas Jeweller" [ref=e90] [cursor=pointer]
+          - button "Blue Waves FC" [ref=e93] [cursor=pointer]
+          - button "Swanzaa" [ref=e96] [cursor=pointer]
+          - button "Lensora" [ref=e99] [cursor=pointer]
+          - button "Pretty Makeover Artistry" [ref=e102] [cursor=pointer]
+          - button "Kuttyverse" [ref=e105] [cursor=pointer]
+      - generic [ref=e108]:
+        - generic [ref=e109]: DETAILED EMBLEM ARCHIVE & SPECIFICATIONS
+        - generic [ref=e115]: SHOWING ALL 8 COMMERCIAL CASE STUDIES
+      - generic [ref=e116]:
+        - generic [ref=e117]:
+          - generic [ref=e118]:
+            - generic [ref=e119]:
+              - generic [ref=e120]:
+                - generic [ref=e121]: Studio Identity & Creative Mark
+                - heading "ThinkLoom" [level=3] [ref=e122]
+              - generic [ref=e123]: "2024"
+            - paragraph [ref=e124]: Experimental creative tech & motion insignia
+            - generic [ref=e126]:
+              - img "Master Studio Wordmark" [ref=e128]
+              - generic [ref=e129]: Master Brand
+          - button "EXPLORE CASE STUDY" [ref=e130] [cursor=pointer]
+        - generic [ref=e135]:
+          - generic [ref=e136]:
+            - generic [ref=e137]:
+              - generic [ref=e138]:
+                - generic [ref=e139]: Athletic Identity & Monogram
+                - heading "Messiah Sports" [level=3] [ref=e140]
+              - generic [ref=e141]: "2024"
+            - paragraph [ref=e142]: High-octane typographic mark with dynamic angled terminals
+            - generic [ref=e143]:
+              - generic [ref=e144]:
+                - img "Primary Angular Wordmark" [ref=e146]
+                - generic [ref=e147]: Vector Master
+              - generic [ref=e148]:
+                - img "MS Monogram Shield" [ref=e150]
+                - generic [ref=e151]: Chest Badge
+          - button "EXPLORE CASE STUDY" [ref=e152] [cursor=pointer]
+        - generic [ref=e157]:
+          - generic [ref=e158]:
+            - generic [ref=e159]:
+              - generic [ref=e160]:
+                - generic [ref=e161]: Luxury Heritage & Vel Monogram
+                - heading "Ramyas Jeweller" [level=3] [ref=e162]
+              - generic [ref=e163]: "2024"
+            - paragraph [ref=e164]: 3D sculpted 24K gold logotype with traditional Tamil ligature
+            - generic [ref=e165]:
+              - generic [ref=e166]:
+                - img "Master Golden Identity" [ref=e168]
+                - generic [ref=e169]: Royal Seal
+              - generic [ref=e170]:
+                - img "Traditional Vel Insignia" [ref=e172]
+                - generic [ref=e173]: Packaging Stamp
+          - button "EXPLORE CASE STUDY" [ref=e174] [cursor=pointer]
+        - generic [ref=e179]:
+          - generic [ref=e180]:
+            - generic [ref=e181]:
+              - generic [ref=e182]:
+                - generic [ref=e183]: Sports Crest & Club Insignia
+                - heading "Blue Waves FC" [level=3] [ref=e184]
+              - generic [ref=e185]: "2024"
+            - paragraph [ref=e186]: Maritime football shield symbolizing velocity and coastal unity
+            - generic [ref=e188]:
+              - img "Official Match Crest" [ref=e190]
+              - generic [ref=e191]: Official Crest
+          - button "EXPLORE CASE STUDY" [ref=e192] [cursor=pointer]
+        - generic [ref=e197]:
+          - generic [ref=e198]:
+            - generic [ref=e199]:
+              - generic [ref=e200]:
+                - generic [ref=e201]: Haute Couture & Origami Geometry
+                - heading "Swanzaa" [level=3] [ref=e202]
+              - generic [ref=e203]: "2024"
+            - paragraph [ref=e204]: Golden-ratio origami swan silhouette on obsidian canvas
+            - generic [ref=e205]:
+              - generic [ref=e206]:
+                - img "Obsidian Dark Study" [ref=e208]
+                - generic [ref=e209]: Dark Spec
+              - generic [ref=e210]:
+                - img "Pure White Study" [ref=e212]
+                - generic [ref=e213]: Light Spec
+          - button "EXPLORE CASE STUDY" [ref=e214] [cursor=pointer]
+        - generic [ref=e219]:
+          - generic [ref=e220]:
+            - generic [ref=e221]:
+              - generic [ref=e222]:
+                - generic [ref=e223]: Minimal Optical Curvature
+                - heading "Lensora" [level=3] [ref=e224]
+              - generic [ref=e225]: "2024"
+            - paragraph [ref=e226]: Interlocking optical glass refraction curvature symbol
+            - generic [ref=e227]:
+              - generic [ref=e228]:
+                - img "Concentric Arc Mark (Dark)" [ref=e230]
+                - generic [ref=e231]: Dark Studio
+              - generic [ref=e232]:
+                - img "Concentric Arc Mark (Light)" [ref=e234]
+                - generic [ref=e235]: Light Studio
+          - button "EXPLORE CASE STUDY" [ref=e236] [cursor=pointer]
+        - generic [ref=e241]:
+          - generic [ref=e242]:
+            - generic [ref=e243]:
+              - generic [ref=e244]:
+                - generic [ref=e245]: Bridal Calligraphy & Beauty Monogram
+                - heading "Pretty Makeover Artistry" [level=3] [ref=e246]
+              - generic [ref=e247]: "2024"
+            - paragraph [ref=e248]: Opulent bridal beauty typography with gilded scissors & brush
+            - generic [ref=e250]:
+              - img "Master Bridal Identity" [ref=e252]
+              - generic [ref=e253]: Bridal Insignia
+          - button "EXPLORE CASE STUDY" [ref=e254] [cursor=pointer]
+        - generic [ref=e259]:
+          - generic [ref=e260]:
+            - generic [ref=e261]:
+              - generic [ref=e262]:
+                - generic [ref=e263]: Playful Retail Identity & Wordmark
+                - heading "Kuttyverse" [level=3] [ref=e264]
+              - generic [ref=e265]: "2024"
+            - paragraph [ref=e266]: Enchanting children's toy world silhouette under glowing yellow moon
+            - generic [ref=e268]:
+              - img "Toy Boutique Emblem" [ref=e270]
+              - generic [ref=e271]: Retail Mark
+          - button "EXPLORE CASE STUDY" [ref=e272] [cursor=pointer]
+    - generic [ref=e278]:
+      - generic [ref=e279]:
+        - generic [ref=e280]:
+          - generic [ref=e281]: BLACK EDITORIAL EXHIBITION // ALL DISCIPLINARY CHAPTERS
+          - heading "PROJECT SHOWCASE" [level=2] [ref=e284]
+        - generic [ref=e285]:
+          - paragraph [ref=e286]: "[CURATED PORTFOLIO] — Commercial poster campaigns, product launches, bullion broadcasts, and athletic branding."
+          - paragraph [ref=e287]: CLICK ANY ARTWORK TO OPEN FULL CASE STUDY & HIGH-RES VIEWER
+      - generic [ref=e288]:
+        - generic [ref=e289]:
+          - generic [ref=e290]:
+            - text: CHAPTER 01
+            - heading "POSTERS & CAMPAIGNS" [level=3] [ref=e291]
+          - generic [ref=e292]: 04 CURATED RELEASES
+        - generic [ref=e293]:
+          - generic [ref=e294] [cursor=pointer]:
+            - generic [ref=e295]:
+              - img "Ramyas Jeweller — Festive Diwali Gold Savings System" [ref=e296]
+              - generic [ref=e297]: 4-PAGE SYSTEM
+              - generic [ref=e298]: VIEW ARTWORK
+            - generic [ref=e305]:
+              - generic [ref=e306]: Ramyas Jeweller
+              - heading "Ramyas Jeweller — Festive Diwali Gold Savings System" [level=4] [ref=e307]
+              - generic [ref=e308]:
+                - generic [ref=e309]: Brochure & Ledger Architecture
+                - generic [ref=e310]: "2024"
+          - generic [ref=e311] [cursor=pointer]:
+            - generic [ref=e312]:
+              - img "Messiah Sports — Small Gear Big Difference Campaign" [ref=e313]
+              - generic [ref=e314]: COMMERCIAL HERO
+              - generic [ref=e315]: VIEW ARTWORK
+            - generic [ref=e322]:
+              - generic [ref=e323]: Messiah Sports
+              - heading "Messiah Sports — Small Gear Big Difference Campaign" [level=4] [ref=e324]
+              - generic [ref=e325]:
+                - generic [ref=e326]: Product Launch Poster
+                - generic [ref=e327]: "2024"
+          - generic [ref=e328] [cursor=pointer]:
+            - generic [ref=e329]:
+              - img "Ramyas Jeweller — Diwali Savings Launch Poster" [ref=e330]
+              - generic [ref=e331]: RETAIL CAMPAIGN
+              - generic [ref=e332]: VIEW ARTWORK
+            - generic [ref=e339]:
+              - generic [ref=e340]: Ramyas Jeweller
+              - heading "Ramyas Jeweller — Diwali Savings Launch Poster" [level=4] [ref=e341]
+              - generic [ref=e342]:
+                - generic [ref=e343]: Tamil Festive Typography Poster
+                - generic [ref=e344]: "2024"
+          - generic [ref=e345] [cursor=pointer]:
+            - generic [ref=e346]:
+              - img "CR7 Iconic Celebration — Stadium Wall Art" [ref=e347]
+              - generic [ref=e348]: WALL ART
+              - generic [ref=e349]: VIEW ARTWORK
+            - generic [ref=e356]:
+              - generic [ref=e357]: Commercial Print Art
+              - heading "CR7 Iconic Celebration — Stadium Wall Art" [level=4] [ref=e358]
+              - generic [ref=e359]:
+                - generic [ref=e360]: Sports Poster Illustration
+                - generic [ref=e361]: "2024"
+      - generic [ref=e362]:
+        - generic [ref=e363]:
+          - generic [ref=e364]:
+            - text: CHAPTER 02
+            - heading "PRODUCT & ADVERTISING" [level=3] [ref=e365]
+          - generic [ref=e366]: COMMERCIAL ART DIRECTION
+        - generic [ref=e367]:
+          - generic [ref=e368] [cursor=pointer]:
+            - generic [ref=e369]:
+              - img "Messiah Sports — Pro Elite Football Boots Poster" [ref=e370]
+              - generic [ref=e371]: EXPLOSIVE TRACTION // NIKE-RIVAL KEY VISUAL
+            - heading "Messiah Sports — Pro Elite Football Boots Poster" [level=4] [ref=e372]
+            - paragraph [ref=e373]: Staged on wet reflective stadium stone under moody spotlights, with feature callouts for molded studs.
+          - generic [ref=e374] [cursor=pointer]:
+            - generic [ref=e375]:
+              - img "Messiah Sports — Stockings Technical Specification Board" [ref=e376]
+              - generic [ref=e377]: TECHNICAL BLUEPRINT // SPECIFICATION BOARD
+            - heading "Messiah Sports — Stockings Technical Specification Board" [level=4] [ref=e378]
+            - paragraph [ref=e379]: Exploded engineering diagram demonstrating anti-slip grip zone, compression, and breathable fibers.
+      - generic [ref=e380]:
+        - generic [ref=e381]:
+          - generic [ref=e382]:
+            - text: CHAPTER 03
+            - heading "AI VIDEO & MOTION GRAPHICS" [level=3] [ref=e383]
+          - generic [ref=e384]: EXPERIMENTAL SEQUENCES
+        - generic [ref=e386]:
+          - generic [ref=e387]:
+            - generic [ref=e389]:
+              - generic [ref=e390]:
+                - paragraph [ref=e393]: AI MOTION DIRECTED CONCEPT REEL
+                - heading "“The Kinetic Silk” — Dynamic Textile Simulation" [level=4] [ref=e394]
+                - paragraph [ref=e395]: High-framerate procedural lighting, cloth dynamics, and brand monogram particle morphing.
+              - button "PLAY REEL PREVIEW" [ref=e396] [cursor=pointer]
+            - generic [ref=e400]: ● 4K 60FPS // AFTER EFFECTS + PROMPTED LATENT FRAMES
+          - generic [ref=e401]:
+            - heading "Motion Storytelling & Generative Direction" [level=4] [ref=e402]
+            - paragraph [ref=e403]: By pairing traditional keyframe choreography in Adobe After Effects with custom generative motion loops, I build commercial reels that stop viewers mid-scroll.
+            - generic [ref=e404]:
+              - generic [ref=e405]:
+                - generic [ref=e406]: TOOL PIPELINE
+                - text: After Effects, Runway Gen, Premiere Pro
+              - generic [ref=e407]:
+                - generic [ref=e408]: OUTPUT FORMATS
+                - text: 9:16 Social Reels, 16:9 Display Billboards
+      - generic [ref=e409]:
+        - generic [ref=e410]:
+          - generic [ref=e411]:
+            - text: CHAPTER 04
+            - heading "SOCIAL MEDIA & DIGITAL CREATIVES" [level=3] [ref=e412]
+          - generic [ref=e413]: HIGH-VELOCITY CREATIVE SYSTEM
+        - generic [ref=e414]:
+          - generic [ref=e415] [cursor=pointer]:
+            - img "Ramyas Daily Gold & Silver Rate — July 07" [ref=e417]
+            - generic [ref=e418]:
+              - generic [ref=e419]: Ramyas Jeweller
+              - heading "Ramyas Daily Gold & Silver Rate — July 07" [level=5] [ref=e420]
+              - generic [ref=e421]: Daily Price Broadcast
+          - generic [ref=e422] [cursor=pointer]:
+            - img "Ramyas Daily Gold & Silver Rate — July 08" [ref=e424]
+            - generic [ref=e425]:
+              - generic [ref=e426]: Ramyas Jeweller
+              - heading "Ramyas Daily Gold & Silver Rate — July 08" [level=5] [ref=e427]
+              - generic [ref=e428]: Bullion Market Template
+          - generic [ref=e429] [cursor=pointer]:
+            - img "Ramyas Daily Gold & Silver Rate — September 21" [ref=e431]
+            - generic [ref=e432]:
+              - generic [ref=e433]: Ramyas Jeweller
+              - heading "Ramyas Daily Gold & Silver Rate — September 21" [level=5] [ref=e434]
+              - generic [ref=e435]: Market Movement Bulletin
+          - generic [ref=e436] [cursor=pointer]:
+            - img "Kuttyverse — Grand Opening Invitation" [ref=e438]
+            - generic [ref=e439]:
+              - generic [ref=e440]: Kuttyverse Kids Boutique
+              - heading "Kuttyverse — Grand Opening Invitation" [level=5] [ref=e441]
+              - generic [ref=e442]: Retail Launch Creative
+          - generic [ref=e443] [cursor=pointer]:
+            - img "Pretty Makeover — Housewarming Invitation" [ref=e445]
+            - generic [ref=e446]:
+              - generic [ref=e447]: Pretty Makeover Studio
+              - heading "Pretty Makeover — Housewarming Invitation" [level=5] [ref=e448]
+              - generic [ref=e449]: Bespoke Invitation Art
+    - generic [ref=e451]:
+      - generic [ref=e452]:
+        - generic [ref=e453]:
+          - generic [ref=e454]: THE DESIGNER BEHIND THINKLOOM
+          - heading "STUDIO & ABOUT" [level=2] [ref=e458]
+        - generic [ref=e459]: OPERATING ACROSS CHENNAI & DINDIGUL
+      - generic [ref=e464]:
+        - generic [ref=e465]: PERSONAL MANIFESTO
+        - heading "“Graphic design is not decoration. It is visual force, narrative authority, and tactile memory.”" [level=3] [ref=e466]
+        - paragraph [ref=e467]:
+          - text: I established
+          - strong [ref=e468]: ThinkLoom
+          - text: to push back against generic templates and predictable corporate visuals. Every campaign I direct blends razor-sharp typographic hierarchy with raw physical texture—incorporating ripped paper, screen-print imperfections, and cinematic staging.
+        - paragraph [ref=e469]: "Whether designing a daily bullion pricing broadcast viewed by thousands of retail buyers, an international-grade sports advertisement, or an heirloom jewellery passbook, my focus remains constant: create work that is impossible to scroll past."
+        - generic [ref=e470]:
+          - generic [ref=e475]:
+            - heading "Bespoke Vector Craft" [level=4] [ref=e476]
+            - paragraph [ref=e477]: Every curve and anchor hand-crafted in Illustrator
+          - generic [ref=e482]:
+            - heading "Rapid Commercial Delivery" [level=4] [ref=e483]
+            - paragraph [ref=e484]: Agile template systems for daily social publishing
+          - generic [ref=e489]:
+            - heading "Multi-Channel Consistency" [level=4] [ref=e490]
+            - paragraph [ref=e491]: From 10ft outdoor billboards to 9:16 mobile stories
+          - generic [ref=e496]:
+            - heading "Cinematic Lighting" [level=4] [ref=e497]
+            - paragraph [ref=e498]: Atmospheric studio light & 3D product staging
+        - generic [ref=e499]:
+          - generic [ref=e500]:
+            - generic [ref=e501]: TALK DIRECTLY WITH ANITH
+            - text: +91 87781 73681
+          - link "WHATSAPP CHAT" [ref=e502] [cursor=pointer]:
+            - /url: https://wa.me/918778173681
+    - generic [ref=e504]:
+      - generic [ref=e505]: PROJECT COMMISSION & COLLABORATIONS
+      - generic [ref=e508]:
+        - heading "GRACIAS" [level=2] [ref=e509]
+        - generic [ref=e510]: ★ thank you!
+      - paragraph [ref=e511]: “Thanks for exploring my creative world.”
+      - paragraph [ref=e512]: Ready to launch an unmistakable visual identity, commercial campaign, or high-octane poster suite? Let's build something bold together.
+      - generic [ref=e513]:
+        - generic [ref=e514]:
+          - generic [ref=e515]:
+            - generic [ref=e516]: DIRECT INBOX
+            - paragraph [ref=e521]: akanith1105@gmail.com
+            - paragraph [ref=e522]: Typical reply within 24 hours for project inquiries
+          - generic [ref=e523]:
+            - link "SEND EMAIL" [ref=e524] [cursor=pointer]:
+              - /url: mailto:akanith1105@gmail.com
+            - button "Copy Email Address" [ref=e525] [cursor=pointer]
+        - generic [ref=e529]:
+          - generic [ref=e530]:
+            - generic [ref=e531]: INSTANT WHATSAPP
+            - paragraph [ref=e535]: +91 87781 73681
+            - paragraph [ref=e536]: Immediate responses for urgent commercial commissions
+          - link "START WHATSAPP CHAT" [ref=e538] [cursor=pointer]:
+            - /url: https://wa.me/918778173681?text=Hi%20Anith,%20I'd%20like%20to%20discuss%20a%20design%20project%20with%20ThinkLoom
+      - generic [ref=e539]:
+        - generic [ref=e540]:
+          - generic [ref=e541]: THINKLOOM
+          - generic [ref=e542]: //
+          - generic [ref=e543]: ART DIRECTED BY ANITH
+        - generic [ref=e544]:
+          - link "INSTAGRAM" [ref=e545] [cursor=pointer]:
+            - /url: https://www.instagram.com/anxth__11/
+          - link "BEHANCE" [ref=e550] [cursor=pointer]:
+            - /url: https://www.behance.net/akanith
+          - link "LINKEDIN" [ref=e555] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/ak-anith
+  - alert [ref=e560]

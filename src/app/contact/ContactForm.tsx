@@ -90,7 +90,7 @@ export default function ContactForm() {
     );
 
     setSubmittedAction("whatsapp");
-    const waUrl = `https://wa.me/919842143307?text=${text}`;
+    const waUrl = `https://wa.me/918778173681?text=${text}`;
     window.open(waUrl, "_blank", "noopener,noreferrer");
   };
 
@@ -169,7 +169,7 @@ export default function ContactForm() {
               id="phone"
               value={formData.phone}
               onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-              placeholder="+91 98421 ..."
+              placeholder="+91 87781 ..."
               className="w-full px-4 py-3 bg-[#F4F2EC] border border-[#D9D5CC] text-sm text-charcoal focus:bg-white focus:border-teal focus:outline-none transition-colors"
             />
           </div>
