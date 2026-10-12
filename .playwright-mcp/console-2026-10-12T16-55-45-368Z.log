@@ -1,0 +1,58 @@
+[    3236ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3001/:0
+[    3556ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ webpack-internal:///(pages-dir-browser)/./node_modules/react-dom/cjs/react-dom-client.development.js:31148
+[    3730ms] Error: ENOENT: no such file or directory, open 'D:\Designer Portfolio\.next\server\vendor-chunks\lucide-react.js'
+    at Object.readFileSync (node:fs:484:20)
+    at defaultLoadImpl (node:internal/modules/cjs/loader:1243:17)
+    at loadSource (node:internal/modules/cjs/loader:1955:20)
+    at Object..js (node:internal/modules/cjs/loader:2053:44)
+    at Module.load (node:internal/modules/cjs/loader:1651:32)
+    at Module._load (node:internal/modules/cjs/loader:1443:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1674:12)
+    at mod.require (file://D:\Designer Portfolio\node_modules\next\dist\server\require-hook.js:68:28)
+    at require (node:internal/modules/helpers:157:16)
+    at __webpack_require__.f.require (file://D:\Designer Portfolio\.next\server\webpack-runtime.js:190:28)
+    at <unknown> (file://D:\Designer Portfolio\.next\server\webpack-runtime.js:103:40)
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (file://D:\Designer Portfolio\.next\server\webpack-runtime.js:102:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (file://D:\Designer Portfolio\.next\server\webpack-runtime.js:154:22)
+    at <unknown> (file://D:\Designer Portfolio\.next\server\app\page.js:540:47)
+    at Object.<anonymous> (file://D:\Designer Portfolio\.next\server\app\page.js:543:3)
+    at Module._compile (node:internal/modules/cjs/loader:1929:14)
+    at Object..js (node:internal/modules/cjs/loader:2060:10)
+    at Module.load (node:internal/modules/cjs/loader:1651:32)
+    at Module._load (node:internal/modules/cjs/loader:1443:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1674:12)
+    at mod.require (file://D:\Designer Portfolio\node_modules\next\dist\server\require-hook.js:68:28)
+    at require (node:internal/modules/helpers:157:16)
+    at requirePage (file://D:\Designer Portfolio\node_modules\next\dist\server\require.js:99:80)
+    at loadComponentsImpl (file://D:\Designer Portfolio\node_modules\next\dist\server\load-components.js:132:57)
+    at async DevServer.findPageComponentsImpl (file://D:\Designer Portfolio\node_modules\next\dist\server\next-server.js:902:36)
+    at async DevServer.findPageComponents (file://D:\Designer Portfolio\node_modules\next\dist\server\dev\next-dev-server.js:706:16)
+    at async DevServer.renderPageComponent (file://D:\Designer Portfolio\node_modules\next\dist\server\base-server.js:1465:24)
+    at async DevServer.renderToResponseImpl (file://D:\Designer Portfolio\node_modules\next\dist\server\base-server.js:1519:32)
+    at async DevServer.pipeImpl (file://D:\Designer Portfolio\node_modules\next\dist\server\base-server.js:1023:25)
+    at async NextNodeServer.handleCatchallRenderRequest (file://D:\Designer Portfolio\node_modules\next\dist\server\next-server.js:394:17)
+    at async DevServer.handleRequestImpl (file://D:\Designer Portfolio\node_modules\next\dist\server\base-server.js:914:17)
+    at async (file://D:\Designer Portfolio\node_modules\next\dist\server\dev\next-dev-server.js:400:20)
+    at async Span.traceAsyncFn (file://D:\Designer Portfolio\node_modules\next\dist\trace\trace.js:157:20)
+    at async DevServer.handleRequest (file://D:\Designer Portfolio\node_modules\next\dist\server\dev\next-dev-server.js:396:24)
+    at async invokeRender (file://D:\Designer Portfolio\node_modules\next\dist\server\lib\router-server.js:240:21)
+    at async handleRequest (file://D:\Designer Portfolio\node_modules\next\dist\server\lib\router-server.js:437:24)
+    at async requestHandlerImpl (file://D:\Designer Portfolio\node_modules\next\dist\server\lib\router-server.js:485:13)
+    at async Server.requestListener (file://D:\Designer Portfolio\node_modules\next\dist\server\lib\start-server.js:226:13)
+[    3731ms] [LOG] [HMR] connected @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js:45
+[    3762ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3001/favicon.ico:0
+[   16230ms] [ERROR] WebSocket connection to 'ws://localhost:3001/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js:88
+[   17232ms] [ERROR] WebSocket connection to 'ws://localhost:3001/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js:88
+[   18239ms] [ERROR] WebSocket connection to 'ws://localhost:3001/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js:88
+[   19256ms] [ERROR] WebSocket connection to 'ws://localhost:3001/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js:88
+[   20258ms] [ERROR] WebSocket connection to 'ws://localhost:3001/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js:88
+[   25267ms] [ERROR] WebSocket connection to 'ws://localhost:3001/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js:88
+[   30283ms] [ERROR] WebSocket connection to 'ws://localhost:3001/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js:88
+[   35292ms] [ERROR] WebSocket connection to 'ws://localhost:3001/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js:88
+[   45144ms] [LOG] [HMR] connected @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js:45
+[   45194ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3001/_next/static/webpack/3f945f5396461e58.webpack.hot-update.json:0
+[   45194ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/hot-reloader-pages.js:347

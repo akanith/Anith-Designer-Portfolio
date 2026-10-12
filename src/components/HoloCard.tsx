@@ -1,4 +1,5 @@
 'use client';
+/* eslint-disable @next/next/no-img-element */
 
 import { useEffect, useRef, useState } from 'react';
 import type { CSSProperties, PointerEvent as ReactPointerEvent } from 'react';
@@ -726,13 +727,11 @@ export default function HoloCard({
       {shadow ? <span ref={shadowRef} className="holo-card__shadow" aria-hidden="true" /> : null}
       <div ref={rotorRef} className="holo-card__rotor">
         <div className="holo-card__face holo-card__face--front">
-          {image ? /* eslint-disable-next-line @next/next/no-img-element */
-          <img src={image} alt="" draggable={false} /> : null}
+          {image ? <img src={image} alt="" draggable={false} /> : null}
           <canvas ref={canvasRef} />
         </div>
         {flippable ? (
           <div className="holo-card__face holo-card__face--back">
-            /* eslint-disable-next-line @next/next/no-img-element */
             <img src={backImage} alt="" draggable={false} />
           </div>
         ) : null}

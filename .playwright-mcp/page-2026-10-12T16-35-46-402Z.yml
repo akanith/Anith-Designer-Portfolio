@@ -1,0 +1,17 @@
+- generic [active] [ref=e1]:
+  - banner:
+    - navigation [ref=e2]:
+      - generic [ref=e3]:
+        - link "Overview" [ref=e4] [cursor=pointer]:
+          - /url: "#"
+        - link "Logos & Brands" [ref=e5] [cursor=pointer]:
+          - /url: "#logos"
+        - link "Dark Showcase" [ref=e6] [cursor=pointer]:
+          - /url: "#dark-showcase"
+        - link "About Anith" [ref=e7] [cursor=pointer]:
+          - /url: "#about"
+        - link "Contact" [ref=e8] [cursor=pointer]:
+          - /url: "#contact"
+      - link "Start a Project" [ref=e10] [cursor=pointer]:
+        - /url: "#contact"
+  - generic [ref=e15]: Loading ThinkLoom...

@@ -511,7 +511,11 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
         {/* ======================================================== */}
         {/* REDESIGNED DETAILED EMBLEM ARCHIVE WITH REACT BITS HOLOCARD */}
         {/* ======================================================== */}
-        <div className="relative -mx-4 sm:-mx-6 md:-mx-12 px-4 sm:px-6 md:px-12 py-16 sm:py-24 bg-[#0B0B0E] text-white border-t-2 border-neutral-900 mt-16 sm:mt-24">
+        <section
+          id="detailed-emblem-archive"
+          aria-label="BRAND IDENTITY / ARCHIVE 01"
+          className="relative -mx-4 sm:-mx-6 md:-mx-12 px-4 sm:px-6 md:px-12 py-16 sm:py-24 bg-[#0B0B0E] text-white border-t-2 border-neutral-900 mt-16 sm:mt-24 overflow-hidden"
+        >
           {/* Subtle Architectural Charcoal Grid Pattern */}
           <div className="absolute inset-0 architectural-grid opacity-20 pointer-events-none" />
 
@@ -591,8 +595,7 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
                           foilColor={brand.holoFoilColor}
                           objectFit="contain"
                           width={260}
-                          ariaLabel={`Interactive holographic card for ${brand.brandName}`}
-                          onClick={() => handleOpen(brand.projectSlug)}
+                          onClick={brand.holoBackImage ? undefined : () => handleOpen(brand.projectSlug)}
                         />
                       </div>
 
@@ -679,8 +682,7 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
                         foilColor={brand.holoFoilColor}
                         objectFit="contain"
                         width={240}
-                        ariaLabel={`Interactive holographic card for ${brand.brandName}`}
-                        onClick={() => handleOpen(brand.projectSlug)}
+                        onClick={brand.holoBackImage ? undefined : () => handleOpen(brand.projectSlug)}
                       />
 
                       {brand.holoBackImage ? (
@@ -766,8 +768,7 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
                         foilColor={brand.holoFoilColor}
                         objectFit="contain"
                         width={240}
-                        ariaLabel={`Interactive holographic card for ${brand.brandName}`}
-                        onClick={() => handleOpen(brand.projectSlug)}
+                        onClick={brand.holoBackImage ? undefined : () => handleOpen(brand.projectSlug)}
                       />
 
                       {brand.holoBackImage ? (
@@ -802,7 +803,7 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </section>
   );
