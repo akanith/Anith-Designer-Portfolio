@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useState, useId } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { 
   Compass, 
   ArrowUpRight, 
@@ -10,10 +10,11 @@ import {
   Pause, 
   Sparkles, 
   Layers, 
-  CheckCircle2, 
-  RotateCcw 
+  RotateCcw,
+  Sparkle
 } from "lucide-react";
 import OrbitImages, { OrbitImageItem } from "@/components/OrbitImages";
+import HoloCard, { HoloPreset } from "@/components/HoloCard";
 import { projects } from "@/data/projects";
 import { Project } from "@/types";
 
@@ -32,6 +33,9 @@ interface BrandEntry {
   orbitBg: string;
   orbitBorder: string;
   tagline: string;
+  holoPreset: HoloPreset;
+  holoFoilColor: string;
+  holoBackImage?: string;
   items: {
     title: string;
     desc: string;
@@ -57,7 +61,9 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
       orbitImage: "/images/raw/Think Loom.png",
       orbitBg: "bg-[#0B0B0D]",
       orbitBorder: "border-neutral-700/80 shadow-[0_8px_24px_rgba(0,0,0,0.25)]",
-      tagline: "Experimental creative tech & motion insignia",
+      tagline: "The authentic ThinkLoom brand mark representing experimental craft & structured thought threads.",
+      holoPreset: "bursts",
+      holoFoilColor: "#355CFF",
       items: [
         {
           title: "Master Studio Wordmark",
@@ -72,13 +78,16 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
       id: "messiah-sports",
       brandName: "Messiah Sports",
       client: "Messiah Athletic Apparel",
-      category: "Athletic Identity & Monogram",
+      category: "Sports Branding",
       year: "2024",
       projectSlug: "messiah-sports-socks",
       orbitImage: "/images/projects/messiah-sports/brand-identity.png",
       orbitBg: "bg-white",
       orbitBorder: "border-neutral-300 shadow-[0_8px_24px_rgba(0,0,0,0.08)]",
-      tagline: "High-octane typographic mark with dynamic angled terminals",
+      tagline: "High-octane typographic mark and geometric monogram engineered for compression athletic apparel.",
+      holoPreset: "shards",
+      holoFoilColor: "#E7FF59",
+      holoBackImage: "/images/projects/messiah-sports/emblem.png",
       items: [
         {
           title: "Primary Angular Wordmark",
@@ -100,13 +109,16 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
       id: "ramyas-jeweller",
       brandName: "Ramyas Jeweller",
       client: "Ramyas Heritage Gold",
-      category: "Luxury Heritage & Vel Monogram",
+      category: "Jewellery & Luxury Heritage",
       year: "2024",
       projectSlug: "ramyas-jeweller-diwali-savings",
       orbitImage: "/images/projects/ramyas-jeweller/brand-identity-gold.png",
       orbitBg: "bg-[#14080A]",
       orbitBorder: "border-amber-900/60 shadow-[0_8px_24px_rgba(20,8,10,0.35)]",
-      tagline: "3D sculpted 24K gold logotype with traditional Tamil ligature",
+      tagline: "3D sculpted 24K gold logotype paired with the sacred divine vel motif seal for fine heirloom packaging.",
+      holoPreset: "gold",
+      holoFoilColor: "#FFD700",
+      holoBackImage: "/images/projects/ramyas-jeweller/monogram-vel.png",
       items: [
         {
           title: "Master Golden Identity",
@@ -128,13 +140,15 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
       id: "blue-waves-fc",
       brandName: "Blue Waves FC",
       client: "Blue Waves Football Club",
-      category: "Sports Crest & Club Insignia",
+      category: "Sports Crest & Heraldry",
       year: "2024",
       projectSlug: "blue-waves-fc-crest",
       orbitImage: "/images/projects/blue-waves-fc/club-crest.png",
       orbitBg: "bg-white",
       orbitBorder: "border-blue-200 shadow-[0_8px_24px_rgba(53,92,255,0.12)]",
-      tagline: "Maritime football shield symbolizing velocity and coastal unity",
+      tagline: "Coastal maritime football shield symbolizing velocity, tidal power, and team camaraderie.",
+      holoPreset: "swirl",
+      holoFoilColor: "#355CFF",
       items: [
         {
           title: "Official Match Crest",
@@ -149,13 +163,16 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
       id: "swanzaa",
       brandName: "Swanzaa",
       client: "Swanzaa Atelier",
-      category: "Haute Couture & Origami Geometry",
+      category: "Haute Couture & Fashion",
       year: "2024",
       projectSlug: "swanzaa-couture-identity",
       orbitImage: "/images/projects/swanzaa/emblem-dark.png",
       orbitBg: "bg-[#0A0A0A]",
       orbitBorder: "border-neutral-700 shadow-[0_8px_24px_rgba(0,0,0,0.35)]",
-      tagline: "Golden-ratio origami swan silhouette on obsidian canvas",
+      tagline: "Golden-ratio origami swan silhouette engineered for an avant-garde boutique and luxury atelier.",
+      holoPreset: "stars",
+      holoFoilColor: "#EDE9FE",
+      holoBackImage: "/images/projects/swanzaa/emblem-white.png",
       items: [
         {
           title: "Obsidian Dark Study",
@@ -177,13 +194,16 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
       id: "lensora",
       brandName: "Lensora",
       client: "Lensora Optical",
-      category: "Minimal Optical Curvature",
+      category: "Optometry & Studio Identity",
       year: "2024",
       projectSlug: "lensora-visual-identity",
       orbitImage: "/images/projects/lensora/logo-dark.png",
       orbitBg: "bg-[#111113]",
       orbitBorder: "border-neutral-700 shadow-[0_8px_24px_rgba(0,0,0,0.3)]",
-      tagline: "Interlocking optical glass refraction curvature symbol",
+      tagline: "Interlocking concentric refraction arcs evoking optical precision, glass curves, and Scandinavian clarity.",
+      holoPreset: "swirl",
+      holoFoilColor: "#CBD5E1",
+      holoBackImage: "/images/projects/lensora/logo-light.png",
       items: [
         {
           title: "Concentric Arc Mark (Dark)",
@@ -205,13 +225,15 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
       id: "pretty-makeover",
       brandName: "Pretty Makeover Artistry",
       client: "Pretty Makeover Studio",
-      category: "Bridal Calligraphy & Beauty Monogram",
+      category: "Bridal Calligraphy & Beauty",
       year: "2024",
       projectSlug: "pretty-makeover-artistry",
       orbitImage: "/images/projects/pretty-makeover/brand-logo.png",
       orbitBg: "bg-[#070707]",
       orbitBorder: "border-amber-900/50 shadow-[0_8px_24px_rgba(0,0,0,0.4)]",
-      tagline: "Opulent bridal beauty typography with gilded scissors & brush",
+      tagline: "Opulent calligraphic flourish brandmark paired with traditional bridal salon instruments.",
+      holoPreset: "gold",
+      holoFoilColor: "#F59E0B",
       items: [
         {
           title: "Master Bridal Identity",
@@ -226,13 +248,15 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
       id: "kuttyverse",
       brandName: "Kuttyverse",
       client: "Kuttyverse Retail & Toys",
-      category: "Playful Retail Identity & Wordmark",
+      category: "Children's Retail & Toys",
       year: "2024",
       projectSlug: "kuttyverse-toys-and-launch",
       orbitImage: "/images/projects/kuttyverse/brand-logo.png",
       orbitBg: "bg-[#0C0B0A]",
       orbitBorder: "border-neutral-700 shadow-[0_8px_24px_rgba(0,0,0,0.35)]",
-      tagline: "Enchanting children's toy world silhouette under glowing yellow moon",
+      tagline: "Enchanting children's toy world silhouette and bouncy custom lettering under glowing celestial moonlight.",
+      holoPreset: "glitter",
+      holoFoilColor: "#FDE047",
       items: [
         {
           title: "Toy Boutique Emblem",
@@ -414,7 +438,6 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
                 </div>
               }
               renderItem={(entry, index) => {
-                const item = typeof entry === "string" ? null : entry;
                 const brand = brandEntries[index];
                 if (!brand) return null;
 
@@ -485,82 +508,300 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
           </div>
         </div>
 
-        {/* Brand Archive Grid: Dual Studies and Case Studies */}
-        <div className="mb-6 flex items-center justify-between">
-          <div className="flex items-center gap-2 text-xs font-mono font-bold tracking-widest uppercase text-neutral-500">
-            <Layers className="w-3.5 h-3.5 text-accent-coral" />
-            <span>DETAILED EMBLEM ARCHIVE & SPECIFICATIONS</span>
-          </div>
-          <span className="text-xs font-mono text-neutral-400">
-            SHOWING ALL 8 COMMERCIAL CASE STUDIES
-          </span>
-        </div>
+        {/* ======================================================== */}
+        {/* REDESIGNED DETAILED EMBLEM ARCHIVE WITH REACT BITS HOLOCARD */}
+        {/* ======================================================== */}
+        <div className="relative -mx-4 sm:-mx-6 md:-mx-12 px-4 sm:px-6 md:px-12 py-16 sm:py-24 bg-[#0B0B0E] text-white border-t-2 border-neutral-900 mt-16 sm:mt-24">
+          {/* Subtle Architectural Charcoal Grid Pattern */}
+          <div className="absolute inset-0 architectural-grid opacity-20 pointer-events-none" />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {brandEntries.map((brand, bIndex) => (
-            <motion.div
-              key={brand.id}
-              initial={{ opacity: 0, y: 25 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: bIndex * 0.05 }}
-              className="bg-[#FAFAF7] border border-neutral-300 p-5 flex flex-col justify-between shadow-[4px_4px_0px_rgba(0,0,0,0.03)] hover:shadow-[8px_8px_0px_#171717] hover:border-neutral-900 transition-all duration-300 group"
-            >
+          <div className="max-w-7xl mx-auto relative z-10">
+            {/* Archive Section Header */}
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 pb-6 border-b border-neutral-800 gap-6">
               <div>
-                {/* Brand Meta Ribbon */}
-                <div className="flex items-start justify-between pb-3 mb-3 border-b border-neutral-200 gap-2">
-                  <div>
-                    <span className="font-mono text-[9px] text-accent-coral uppercase tracking-wider font-bold block">
-                      {brand.category}
-                    </span>
-                    <h3 className="font-sans text-lg font-black text-neutral-950 leading-tight">
-                      {brand.brandName}
-                    </h3>
-                  </div>
-                  <span className="font-mono text-[11px] text-neutral-400 font-bold shrink-0">
-                    {brand.year}
-                  </span>
+                <div className="flex items-center gap-2 text-xs font-mono font-bold tracking-widest uppercase text-accent-coral mb-2">
+                  <Sparkle className="w-3.5 h-3.5 fill-current" />
+                  <span>BRAND IDENTITY / ARCHIVE 01</span>
                 </div>
-
-                <p className="text-xs text-neutral-500 font-medium mb-3 line-clamp-2">
-                  {brand.tagline}
+                <h3 className="text-3xl sm:text-5xl md:text-6xl font-black text-white tracking-tighter uppercase">
+                  DETAILED EMBLEM ARCHIVE
+                </h3>
+              </div>
+              <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+                <p className="max-w-md text-sm sm:text-base text-neutral-400 font-medium leading-relaxed">
+                  A collection of visual identities, built with purpose and crafted to be remembered.
                 </p>
+              </div>
+            </div>
 
-                {/* Logo Artwork Tiles */}
-                <div className={`grid ${brand.items.length > 1 ? "grid-cols-2" : "grid-cols-1"} gap-2 my-2`}>
-                  {brand.items.map((item) => (
-                    <div
-                      key={item.title}
-                      className={`relative aspect-square border border-neutral-300 overflow-hidden flex flex-col items-center justify-center p-3 ${item.bg} group/item`}
-                    >
-                      <div className="relative w-full h-full flex items-center justify-center">
-                        <Image
-                          src={item.url}
-                          alt={item.title}
-                          fill
-                          className="object-contain p-1 filter group-hover/item:scale-105 transition-transform duration-300"
-                          sizes="(max-width: 768px) 140px, 180px"
+            {/* Interactive Holographic Foil Gallery */}
+            <div className="space-y-8 sm:space-y-12">
+              {/* Marquee Duo Showcase: ThinkLoom & Messiah Sports */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
+                {brandEntries.slice(0, 2).map((brand, idx) => (
+                  <motion.div
+                    key={brand.id}
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: idx * 0.1 }}
+                    className="bg-[#121217] border border-neutral-800 p-6 sm:p-8 flex flex-col justify-between shadow-[8px_8px_0px_rgba(0,0,0,0.6)] hover:border-neutral-600 transition-all duration-300 group"
+                  >
+                    {/* Top Meta Bar */}
+                    <div className="flex items-center justify-between pb-4 mb-6 border-b border-neutral-800">
+                      <div>
+                        <span className="font-mono text-[10px] text-accent-coral uppercase tracking-widest font-bold">
+                          {brand.category}
+                        </span>
+                        <h4 className="font-sans text-2xl font-black text-white tracking-tight mt-0.5">
+                          {brand.brandName}
+                        </h4>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        {brand.holoBackImage && (
+                          <span className="px-2 py-0.5 bg-neutral-900 border border-neutral-700 text-neutral-300 text-[9px] font-mono tracking-wider uppercase font-bold flex items-center gap-1">
+                            <RotateCcw className="w-2.5 h-2.5" />
+                            <span>DUAL STUDY</span>
+                          </span>
+                        )}
+                        <span className="font-mono text-xs text-neutral-500 font-bold">
+                          {brand.year}
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* HoloCard Centered Stage */}
+                    <div className="my-4 py-6 px-4 bg-[#08080A] border border-neutral-900/80 rounded-none flex flex-col items-center justify-center relative overflow-hidden group-hover:border-neutral-700 transition-colors">
+                      <div className="absolute inset-0 architectural-grid opacity-10 pointer-events-none" />
+                      
+                      <div className="relative z-10 flex items-center justify-center w-full">
+                        <HoloCard
+                          image={brand.orbitImage}
+                          backImage={brand.holoBackImage}
+                          alt={`${brand.brandName} Holographic Emblem`}
+                          preset={brand.holoPreset}
+                          intensity={0.35}
+                          edgeSparkle={0.45}
+                          glare={0.3}
+                          tiltMax={10}
+                          hoverScale={1.03}
+                          idle={true}
+                          shadow={true}
+                          radius={12}
+                          foilColor={brand.holoFoilColor}
+                          objectFit="contain"
+                          width={260}
+                          ariaLabel={`Interactive holographic card for ${brand.brandName}`}
+                          onClick={() => handleOpen(brand.projectSlug)}
                         />
                       </div>
-                      <span className="absolute bottom-1.5 left-1.5 text-[8px] font-mono tracking-wider uppercase px-1 py-0.5 bg-neutral-900/80 text-white backdrop-blur-xs">
-                        {item.tag}
-                      </span>
+
+                      {brand.holoBackImage ? (
+                        <p className="mt-4 text-[10px] font-mono text-neutral-400 uppercase tracking-widest flex items-center gap-1.5">
+                          <RotateCcw className="w-3 h-3 text-accent-coral" />
+                          <span>CLICK CARD TO FLIP STUDY ↻</span>
+                        </p>
+                      ) : (
+                        <p className="mt-4 text-[10px] font-mono text-neutral-500 uppercase tracking-widest">
+                          TILT TO REVEAL SPECULAR SHIMMER
+                        </p>
+                      )}
                     </div>
-                  ))}
-                </div>
+
+                    {/* Description and Trigger */}
+                    <div className="pt-4 border-t border-neutral-800">
+                      <p className="text-sm text-neutral-300 font-medium leading-relaxed mb-4">
+                        {brand.tagline}
+                      </p>
+
+                      <button
+                        type="button"
+                        onClick={() => handleOpen(brand.projectSlug)}
+                        className="w-full py-2.5 px-4 bg-neutral-900 hover:bg-white text-white hover:text-neutral-950 border border-neutral-700 hover:border-white font-mono text-xs font-bold transition-all duration-200 flex items-center justify-between group/btn"
+                      >
+                        <span>VIEW FULL CASE STUDY & ASSETS</span>
+                        <ArrowUpRight className="w-4 h-4 text-neutral-400 group-hover/btn:text-neutral-950 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
+                      </button>
+                    </div>
+                  </motion.div>
+                ))}
               </div>
 
-              {/* Card Footer / Detail Trigger */}
-              <button
-                type="button"
-                onClick={() => handleOpen(brand.projectSlug)}
-                className="mt-4 pt-3 border-t border-neutral-200 flex items-center justify-between text-xs font-mono font-bold text-neutral-800 hover:text-accent-cobalt transition-colors w-full text-left"
-              >
-                <span>EXPLORE CASE STUDY</span>
-                <ArrowUpRight className="w-4 h-4 text-neutral-400 group-hover:text-accent-cobalt group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-              </button>
-            </motion.div>
-          ))}
+              {/* Trio Showcase: Ramyas Jeweller, Blue Waves FC, Swanzaa */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                {brandEntries.slice(2, 5).map((brand, idx) => (
+                  <motion.div
+                    key={brand.id}
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: idx * 0.1 }}
+                    className="bg-[#121217] border border-neutral-800 p-6 flex flex-col justify-between shadow-[6px_6px_0px_rgba(0,0,0,0.5)] hover:border-neutral-600 transition-all duration-300 group"
+                  >
+                    {/* Top Meta Bar */}
+                    <div className="flex items-center justify-between pb-3 mb-4 border-b border-neutral-800">
+                      <div>
+                        <span className="font-mono text-[10px] text-accent-coral uppercase tracking-widest font-bold">
+                          {brand.category}
+                        </span>
+                        <h4 className="font-sans text-xl font-black text-white tracking-tight mt-0.5">
+                          {brand.brandName}
+                        </h4>
+                      </div>
+                      <div className="flex items-center gap-1.5">
+                        {brand.holoBackImage && (
+                          <span className="px-1.5 py-0.5 bg-neutral-900 border border-neutral-700 text-neutral-300 text-[8px] font-mono tracking-wider uppercase font-bold flex items-center gap-1">
+                            <RotateCcw className="w-2.5 h-2.5" />
+                            <span>FLIP</span>
+                          </span>
+                        )}
+                        <span className="font-mono text-xs text-neutral-500 font-bold">
+                          {brand.year}
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* HoloCard Stage */}
+                    <div className="my-3 py-5 px-3 bg-[#08080A] border border-neutral-900 rounded-none flex flex-col items-center justify-center relative overflow-hidden group-hover:border-neutral-700 transition-colors">
+                      <HoloCard
+                        image={brand.orbitImage}
+                        backImage={brand.holoBackImage}
+                        alt={`${brand.brandName} Holographic Emblem`}
+                        preset={brand.holoPreset}
+                        intensity={0.35}
+                        edgeSparkle={0.45}
+                        glare={0.3}
+                        tiltMax={10}
+                        hoverScale={1.03}
+                        idle={true}
+                        shadow={true}
+                        radius={12}
+                        foilColor={brand.holoFoilColor}
+                        objectFit="contain"
+                        width={240}
+                        ariaLabel={`Interactive holographic card for ${brand.brandName}`}
+                        onClick={() => handleOpen(brand.projectSlug)}
+                      />
+
+                      {brand.holoBackImage ? (
+                        <p className="mt-3 text-[9px] font-mono text-neutral-400 uppercase tracking-wider flex items-center gap-1">
+                          <RotateCcw className="w-2.5 h-2.5 text-accent-coral" />
+                          <span>TAP TO FLIP DUAL STUDY</span>
+                        </p>
+                      ) : (
+                        <p className="mt-3 text-[9px] font-mono text-neutral-500 uppercase tracking-wider">
+                          INTERACTIVE FOIL
+                        </p>
+                      )}
+                    </div>
+
+                    {/* Description and Trigger */}
+                    <div className="pt-3 border-t border-neutral-800">
+                      <p className="text-xs text-neutral-400 font-medium leading-relaxed mb-3 line-clamp-2">
+                        {brand.tagline}
+                      </p>
+
+                      <button
+                        type="button"
+                        onClick={() => handleOpen(brand.projectSlug)}
+                        className="w-full py-2 px-3 bg-neutral-900 hover:bg-white text-white hover:text-neutral-950 border border-neutral-700 hover:border-white font-mono text-xs font-bold transition-all duration-200 flex items-center justify-between group/btn"
+                      >
+                        <span>VIEW CASE STUDY</span>
+                        <ArrowUpRight className="w-3.5 h-3.5 text-neutral-400 group-hover/btn:text-neutral-950 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
+                      </button>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+
+              {/* Trio Showcase: Lensora, Pretty Makeover, Kuttyverse */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                {brandEntries.slice(5, 8).map((brand, idx) => (
+                  <motion.div
+                    key={brand.id}
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: idx * 0.1 }}
+                    className="bg-[#121217] border border-neutral-800 p-6 flex flex-col justify-between shadow-[6px_6px_0px_rgba(0,0,0,0.5)] hover:border-neutral-600 transition-all duration-300 group"
+                  >
+                    {/* Top Meta Bar */}
+                    <div className="flex items-center justify-between pb-3 mb-4 border-b border-neutral-800">
+                      <div>
+                        <span className="font-mono text-[10px] text-accent-coral uppercase tracking-widest font-bold">
+                          {brand.category}
+                        </span>
+                        <h4 className="font-sans text-xl font-black text-white tracking-tight mt-0.5">
+                          {brand.brandName}
+                        </h4>
+                      </div>
+                      <div className="flex items-center gap-1.5">
+                        {brand.holoBackImage && (
+                          <span className="px-1.5 py-0.5 bg-neutral-900 border border-neutral-700 text-neutral-300 text-[8px] font-mono tracking-wider uppercase font-bold flex items-center gap-1">
+                            <RotateCcw className="w-2.5 h-2.5" />
+                            <span>FLIP</span>
+                          </span>
+                        )}
+                        <span className="font-mono text-xs text-neutral-500 font-bold">
+                          {brand.year}
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* HoloCard Stage */}
+                    <div className="my-3 py-5 px-3 bg-[#08080A] border border-neutral-900 rounded-none flex flex-col items-center justify-center relative overflow-hidden group-hover:border-neutral-700 transition-colors">
+                      <HoloCard
+                        image={brand.orbitImage}
+                        backImage={brand.holoBackImage}
+                        alt={`${brand.brandName} Holographic Emblem`}
+                        preset={brand.holoPreset}
+                        intensity={0.35}
+                        edgeSparkle={0.45}
+                        glare={0.3}
+                        tiltMax={10}
+                        hoverScale={1.03}
+                        idle={true}
+                        shadow={true}
+                        radius={12}
+                        foilColor={brand.holoFoilColor}
+                        objectFit="contain"
+                        width={240}
+                        ariaLabel={`Interactive holographic card for ${brand.brandName}`}
+                        onClick={() => handleOpen(brand.projectSlug)}
+                      />
+
+                      {brand.holoBackImage ? (
+                        <p className="mt-3 text-[9px] font-mono text-neutral-400 uppercase tracking-wider flex items-center gap-1">
+                          <RotateCcw className="w-2.5 h-2.5 text-accent-coral" />
+                          <span>TAP TO FLIP DUAL STUDY</span>
+                        </p>
+                      ) : (
+                        <p className="mt-3 text-[9px] font-mono text-neutral-500 uppercase tracking-wider">
+                          INTERACTIVE FOIL
+                        </p>
+                      )}
+                    </div>
+
+                    {/* Description and Trigger */}
+                    <div className="pt-3 border-t border-neutral-800">
+                      <p className="text-xs text-neutral-400 font-medium leading-relaxed mb-3 line-clamp-2">
+                        {brand.tagline}
+                      </p>
+
+                      <button
+                        type="button"
+                        onClick={() => handleOpen(brand.projectSlug)}
+                        className="w-full py-2 px-3 bg-neutral-900 hover:bg-white text-white hover:text-neutral-950 border border-neutral-700 hover:border-white font-mono text-xs font-bold transition-all duration-200 flex items-center justify-between group/btn"
+                      >
+                        <span>VIEW CASE STUDY</span>
+                        <ArrowUpRight className="w-3.5 h-3.5 text-neutral-400 group-hover/btn:text-neutral-950 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
+                      </button>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
