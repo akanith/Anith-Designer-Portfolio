@@ -30,6 +30,7 @@ interface BrandEntry {
   year: string;
   projectSlug: string;
   orbitImage: string;
+  archiveImage: string;
   orbitBg: string;
   orbitBorder: string;
   tagline: string;
@@ -59,6 +60,7 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
       year: "2024",
       projectSlug: "thinkloom-studio-identity",
       orbitImage: "/images/orbit/thinkloom.png",
+      archiveImage: "/images/brand/thinkloom-printing-dark.png",
       orbitBg: "bg-[#0B0B0D]",
       orbitBorder: "border border-neutral-700/50 shadow-[0_4px_18px_rgba(0,0,0,0.22)]",
       tagline: "BEYOND DESIGN. INTO REALITY. — The official ThinkLoom brand mark representing structured creative craft and multicolour printing precision.",
@@ -97,6 +99,7 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
       year: "2024",
       projectSlug: "messiah-sports-socks",
       orbitImage: "/images/orbit/messiah-sports.png",
+      archiveImage: "/images/projects/messiah-sports/brand-identity.png",
       orbitBg: "bg-white",
       orbitBorder: "border border-neutral-200/90 shadow-[0_4px_18px_rgba(0,0,0,0.06)]",
       tagline: "High-octane typographic mark and geometric monogram engineered for compression athletic apparel.",
@@ -128,6 +131,7 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
       year: "2024",
       projectSlug: "ramyas-jeweller-diwali-savings",
       orbitImage: "/images/orbit/ramyas-jeweller.png",
+      archiveImage: "/images/projects/ramyas-jeweller/brand-identity-gold.png",
       orbitBg: "bg-[#14080A]",
       orbitBorder: "border border-amber-900/40 shadow-[0_4px_18px_rgba(20,8,10,0.25)]",
       tagline: "3D sculpted 24K gold logotype paired with the sacred divine vel motif seal for fine heirloom packaging.",
@@ -159,6 +163,7 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
       year: "2024",
       projectSlug: "blue-waves-fc-crest",
       orbitImage: "/images/orbit/blue-waves-fc.png",
+      archiveImage: "/images/projects/blue-waves-fc/club-crest.png",
       orbitBg: "bg-white",
       orbitBorder: "border border-blue-200/90 shadow-[0_4px_18px_rgba(53,92,255,0.08)]",
       tagline: "Coastal maritime football shield symbolizing velocity, tidal power, and team camaraderie.",
@@ -182,6 +187,7 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
       year: "2024",
       projectSlug: "swanzaa-couture-identity",
       orbitImage: "/images/orbit/swanzaa.png",
+      archiveImage: "/images/projects/swanzaa/emblem-dark.png",
       orbitBg: "bg-[#0A0A0A]",
       orbitBorder: "border border-neutral-700/50 shadow-[0_4px_18px_rgba(0,0,0,0.22)]",
       tagline: "Golden-ratio origami swan silhouette engineered for an avant-garde boutique and luxury atelier.",
@@ -213,6 +219,7 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
       year: "2024",
       projectSlug: "lensora-visual-identity",
       orbitImage: "/images/orbit/lensora.png",
+      archiveImage: "/images/projects/lensora/logo-dark.png",
       orbitBg: "bg-[#111113]",
       orbitBorder: "border border-neutral-700/50 shadow-[0_4px_18px_rgba(0,0,0,0.22)]",
       tagline: "Interlocking concentric refraction arcs evoking optical precision, glass curves, and Scandinavian clarity.",
@@ -244,6 +251,7 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
       year: "2024",
       projectSlug: "pretty-makeover-artistry",
       orbitImage: "/images/orbit/pretty-makeover.png",
+      archiveImage: "/images/projects/pretty-makeover/brand-logo.png",
       orbitBg: "bg-[#070707]",
       orbitBorder: "border border-amber-900/40 shadow-[0_4px_18px_rgba(0,0,0,0.25)]",
       tagline: "Opulent calligraphic flourish brandmark paired with traditional bridal salon instruments.",
@@ -267,6 +275,7 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
       year: "2024",
       projectSlug: "kuttyverse-toys-and-launch",
       orbitImage: "/images/orbit/kuttyverse.png",
+      archiveImage: "/images/projects/kuttyverse/brand-logo.png",
       orbitBg: "bg-[#0C0B0A]",
       orbitBorder: "border border-neutral-700/50 shadow-[0_4px_18px_rgba(0,0,0,0.22)]",
       tagline: "Enchanting children's toy world silhouette and bouncy custom lettering under glowing celestial moonlight.",
@@ -572,7 +581,7 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
 
                     <div className="my-3 py-1">
                       <HoloCard
-                        image={brandEntries[0].orbitImage}
+                        image={brandEntries[0].archiveImage}
                         backImage={brandEntries[0].holoBackImage}
                         alt={`${brandEntries[0].brandName} Holographic Emblem`}
                         preset="shards"
@@ -586,6 +595,7 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
                         radius={14}
                         foilColor="#00B8C8"
                         objectFit="contain"
+                        aspectRatio={1}
                         width={260}
                         onClick={brandEntries[0].holoBackImage ? undefined : () => handleOpen(brandEntries[0].projectSlug)}
                       />
@@ -699,7 +709,7 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
                   {/* HoloCard Stage (Proportional Framing from Screenshot 2) */}
                   <div className="my-3 py-5 px-3 bg-[#F8F6F0] border border-[#DDD8CF] rounded-lg flex flex-col items-center justify-center relative overflow-hidden group-hover:border-neutral-400 transition-colors">
                     <HoloCard
-                      image={brand.orbitImage}
+                      image={brand.archiveImage}
                       backImage={brand.holoBackImage}
                       alt={`${brand.brandName} Holographic Emblem`}
                       preset={brand.holoPreset}
@@ -713,6 +723,7 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
                       radius={12}
                       foilColor={brand.holoFoilColor}
                       objectFit="contain"
+                      aspectRatio={1}
                       width={260}
                       onClick={brand.holoBackImage ? undefined : () => handleOpen(brand.projectSlug)}
                     />
@@ -787,7 +798,7 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
                     {/* HoloCard Stage (Proportional Framing from Screenshot 2) */}
                     <div className="my-3 py-4 px-3 bg-[#F8F6F0] border border-[#DDD8CF] rounded-lg flex flex-col items-center justify-center relative overflow-hidden group-hover:border-neutral-400 transition-colors">
                       <HoloCard
-                        image={brand.orbitImage}
+                        image={brand.archiveImage}
                         backImage={brand.holoBackImage}
                         alt={`${brand.brandName} Holographic Emblem`}
                         preset={brand.holoPreset}
@@ -801,6 +812,7 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
                         radius={12}
                         foilColor={brand.holoFoilColor}
                         objectFit="contain"
+                        aspectRatio={1}
                         width={240}
                         onClick={brand.holoBackImage ? undefined : () => handleOpen(brand.projectSlug)}
                       />

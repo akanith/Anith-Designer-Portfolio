@@ -65,6 +65,8 @@ precision highp float;
 uniform sampler2D uArt;
 uniform vec2 uSize;
 uniform float uAspect;
+uniform float uImgAspect;
+uniform int uFitContain;
 uniform vec2 uTilt;
 uniform vec2 uLight;
 uniform float uDistance;
@@ -249,13 +251,31 @@ vec3 sparkles(vec2 p, vec3 halfway, vec2 sweep, float awake) {
 
 void main() {
   vec2 uv = vec2(gl_FragCoord.x / uSize.x, 1.0 - gl_FragCoord.y / uSize.y);
+  vec2 artUV = uv;
+  if (uFitContain == 1 && uImgAspect > 0.0) {
+    float canvasAspect = uSize.x / uSize.y;
+    vec2 p = uv - 0.5;
+    if (canvasAspect > uImgAspect) {
+      p.x *= (canvasAspect / uImgAspect);
+    } else {
+      p.y *= (uImgAspect / canvasAspect);
+    }
+    artUV = p + 0.5;
+  }
+
   vec2 p = vec2(uv.x, uv.y * uAspect);
   vec2 center = vec2(0.5, 0.5 * uAspect);
   vec2 q = abs(p - center) - center + uRadius;
   float outside = length(max(q, 0.0)) + min(max(q.x, q.y), 0.0) - uRadius;
   float pixel = 1.0 / uSize.x;
   float alpha = clamp(0.5 - outside / pixel, 0.0, 1.0);
-  vec4 sampled = texture(uArt, uv);
+
+  vec4 sampled = vec4(0.0);
+  if (artUV.x >= 0.0 && artUV.x <= 1.0 && artUV.y >= 0.0 && artUV.y <= 1.0) {
+    sampled = texture(uArt, artUV);
+  } else {
+    alpha = 0.0;
+  }
   if (uReady > 0.5) alpha *= sampled.a;
   if (alpha <= 0.0) {
     outColor = vec4(0.0);
@@ -381,6 +401,9 @@ export default function HoloCard({
   const wakeRef = useRef<(() => void) | null>(null);
   const loadRef = useRef<((src?: string) => void) | null>(null);
   const flipRef = useRef(false);
+  const fitRef = useRef<string>(objectFit || 'contain');
+  fitRef.current = objectFit || 'contain';
+  const imgAspectRef = useRef<number>(1.0);
   const [ratio, setRatio] = useState(aspectRatio || CARD_RATIO);
   const [ready, setReady] = useState(false);
   const [flipped, setFlipped] = useState(false);
@@ -457,6 +480,8 @@ export default function HoloCard({
           'uArt',
           'uSize',
           'uAspect',
+          'uImgAspect',
+          'uFitContain',
           'uTilt',
           'uLight',
           'uDistance',
@@ -511,6 +536,8 @@ export default function HoloCard({
       gl.uniform1i(uniforms.uArt, 0);
       gl.uniform2f(uniforms.uSize, w, h);
       gl.uniform1f(uniforms.uAspect, h / w);
+      gl.uniform1f(uniforms.uImgAspect, imgAspectRef.current || 1.0);
+      gl.uniform1i(uniforms.uFitContain, fitRef.current === 'contain' ? 1 : 0);
       gl.uniform2f(uniforms.uTilt, (state.tiltX * Math.PI) / 180, ((state.tiltY + state.turn) * Math.PI) / 180);
       gl.uniform2f(uniforms.uLight, state.lightX, state.lightY);
       gl.uniform1f(uniforms.uDistance, PERSPECTIVE / Math.max(1, canvas.clientWidth));
@@ -624,7 +651,9 @@ export default function HoloCard({
       img.decoding = 'async';
       img.onload = () => {
         if (!alive) return;
-        if (!aspectRatio && img.naturalWidth && img.naturalHeight) setRatio(img.naturalWidth / img.naturalHeight);
+        const imgRatio = (img.naturalWidth && img.naturalHeight) ? (img.naturalWidth / img.naturalHeight) : 1.0;
+        imgAspectRef.current = imgRatio;
+        if (!aspectRatio && img.naturalWidth && img.naturalHeight) setRatio(imgRatio);
         if (!gl || !program) return;
         try {
           gl.bindTexture(gl.TEXTURE_2D, texture);

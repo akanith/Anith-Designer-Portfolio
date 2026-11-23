@@ -74,7 +74,7 @@
   object-fit: contain;
   pointer-events: none;
   -webkit-user-drag: none;
-  padding: 12px;
+  padding: 0;
 }
 
 .holo-card[data-fit="cover"] .holo-card__face img {
@@ -84,7 +84,7 @@
 
 .holo-card[data-fit="contain"] .holo-card__face img {
   object-fit: contain;
-  padding: 14px;
+  padding: 0;
 }
 
 .holo-card__face canvas {
