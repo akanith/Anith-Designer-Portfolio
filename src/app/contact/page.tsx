@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import ContactSection from "@/components/sections/ContactSection";
 
 export const metadata: Metadata = {
-  title: "Contact Anith / ThinkLoom — Start a Project",
+  title: "Contact ThinkLoom — Start a Project",
   description:
-    "Direct contact details, WhatsApp connection, and project inquiry form for commissions and creative collaborations.",
+    "Direct contact details, email (thinkloomstudio@gmail.com), WhatsApp connection, and project inquiry form for design and printing commissions.",
 };
 
 export default function ContactPage() {

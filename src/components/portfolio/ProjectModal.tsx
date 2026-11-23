@@ -176,7 +176,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
 
             {/* Asset Gallery (All Project Images) */}
             <div>
-              <h3 className="font-mono text-xs uppercase tracking-widest text-accent-cobalt font-semibold mb-6">
+              <h3 className="font-mono text-xs uppercase tracking-widest text-[#00B8C8] font-semibold mb-6">
                 {`// Artwork & Exhibit Components (${project.images.length})`}
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -213,6 +213,43 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                 ))}
               </div>
             </div>
+
+            {/* Video Showcase Components (if project has videos) */}
+            {project.videos && project.videos.length > 0 && (
+              <div className="mt-12 pt-8 border-t border-ink-border">
+                <h3 className="font-mono text-xs uppercase tracking-widest text-[#00B8C8] font-semibold mb-6 flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-[#00B8C8] animate-pulse" />
+                  <span>{`// Commercial Videos & Motion Components (${project.videos.length})`}</span>
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {project.videos.map((vid, vIdx) => (
+                    <div
+                      key={vIdx}
+                      className="rounded-xl border border-ink-border bg-white p-3 shadow-sm overflow-hidden"
+                    >
+                      <div className="relative aspect-video w-full rounded-lg overflow-hidden bg-neutral-950">
+                        <video
+                          src={vid.url}
+                          poster={vid.poster}
+                          controls
+                          playsInline
+                          preload="metadata"
+                          className="w-full h-full object-contain"
+                        />
+                      </div>
+                      <div className="p-3 border-t border-ink-border bg-canvas mt-2 rounded-md">
+                        <span className="font-mono text-[9px] uppercase tracking-wider text-[#00B8C8] font-bold block">
+                          {vid.category || "Commercial Motion"}
+                        </span>
+                        <h4 className="font-sans text-xs font-bold text-ink mt-0.5">
+                          {vid.title}
+                        </h4>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         </motion.div>
       </div>

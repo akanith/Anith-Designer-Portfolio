@@ -23,9 +23,17 @@ const config: Config = {
           border: "#E7E7E0",
           "border-dark": "#D4D4CC",
         },
+        brand: {
+          charcoal: "#171717",
+          ivory: "#F5F1E8",
+          teal: "#00B8C8",
+          green: "#65C74A",
+        },
         accent: {
           coral: "#FF5A45",
           cobalt: "#355CFF",
+          teal: "#00B8C8",
+          green: "#65C74A",
           yellow: "#E7FF59",
           violet: "#8B5CF6",
           lavender: "#EDE9FE",

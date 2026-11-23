@@ -31,3 +31,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# scratch and test artifacts
+scratch/
+.playwright-mcp/
+*.log
+
+/public/asset-inventory-preview.html

@@ -2,123 +2,65 @@ import { ServiceItem, CreativeProcessStep } from "@/types";
 
 export const services: ServiceItem[] = [
   {
-    id: "brand-identity",
+    id: "graphic-design",
     number: "01",
-    title: "Brand Identity & Logo Design",
-    tagline: "Distinctive visual marks and comprehensive design systems that build lasting equity.",
+    title: "Graphic Design",
+    tagline: "Distinctive brand identities, arresting posters, and comprehensive publication design.",
     description:
-      "Engineering primary marks, monogram crests, bespoke typography scales, color systems, and comprehensive brand guidelines that look formidable on retail packaging and digital interfaces alike.",
+      "Sculpting iconic vector marks, high-octane commercial posters, corporate stationery, and agile social media publishing templates engineered with precision typography and grid geometry.",
     deliverables: [
-      "Primary Brand Mark & Monogram",
-      "Vector Emblem & Favicon System",
-      "Typography Scale & Color Tokens",
-      "Packaging & Collateral Prototypes",
-      "Master Vector Assets (SVG, AI, PDF)",
+      "Logo Design",
+      "Poster Design",
+      "Business Card Design",
+      "Brochure & Catalogue Design",
+      "Advertising Design",
+      "Social Media Creatives",
     ],
-    suitableFor: "Startups, fashion ateliers, sports labels, and emerging founders building long-term recognition.",
-    accent: "#355CFF", // Vivid cobalt
+    suitableFor:
+      "Founders, retail enterprises, sports apparel labels, and luxury brands seeking distinctive, memorable market presence.",
+    accent: "#00B8C8", // Electric Teal
   },
   {
-    id: "social-media-posters",
+    id: "printing-production",
     number: "02",
-    title: "Social Media & Promotional Posters",
-    tagline: "Arresting digital posters and agile publishing templates that demand attention.",
+    title: "Digital & Offset Multicolour Printing",
+    tagline: "Commercial-grade digital & offset printing, fine finishing, and architectural large formats.",
     description:
-      "Strategic daily and weekly social asset design that maintains gallery polish. From high-frequency daily market rate bulletins to promotional announcements and carousel spreads.",
+      "Bringing digital designs into the physical realm with high-fidelity colour calibration, specialized paper stocks, foil stamping, precision die-cutting, and large-scale backlit displays.",
     deliverables: [
-      "Modular Social Feed Layouts (4:5 / 1:1)",
-      "9:16 Vertical Story & Reel Covers",
-      "Daily Bullion & Market Rate Bulletins",
-      "Festive & Seasonal Campaign Creative",
-      "Multi-Slide Educational Systems",
+      "Brochures & Catalogues",
+      "Flyers & Notices",
+      "Business Cards",
+      "Wedding & Invitation Cards",
+      "Letterheads & Bill Books",
+      "Lamination & Binding",
+      "Stickers & Die Cutting",
+      "A4 to A0 Plan Printing",
+      "Backlit Printing",
+      "LED Frames",
     ],
-    suitableFor: "Retail showrooms, lifestyle brands, creators, and commerce businesses seeking daily visual prestige.",
-    accent: "#FF5A45", // Electric coral
+    suitableFor:
+      "Showrooms, event celebrations, corporate offices, architectural firms, and retailers requiring high-precision print production.",
+    accent: "#65C74A", // Fresh Green
   },
   {
-    id: "product-advertising",
+    id: "ai-video-creation",
     number: "03",
-    title: "Product Advertising",
-    tagline: "Tactile studio staging and technical callouts showcasing material craftsmanship.",
+    title: "AI Video Creation",
+    tagline: "Next-generation generative commercial videos and dynamic product motion stories.",
     description:
-      "Purpose-built commercial visuals engineered specifically for physical consumer products. Staging items on architectural pedestals with cinematic lighting and benefit infographics.",
+      "Pairing cutting-edge AI generative video pipelines with professional keyframe choreography to produce high-retention commercial advertisements, product reveals, and festive social video campaigns.",
     deliverables: [
-      "Studio Staging & Key Visual (KV) Art Direction",
-      "Technical Feature Callout Infographics",
-      "Retail Mockup Boards & Display Cards",
-      "Packaging Box Artwork & Label Systems",
-      "High-Resolution Print & Digital Formats",
+      "AI Advertisement Videos",
+      "Product Motion Teasers",
+      "3D Logo Reveal Animations",
+      "Festive Social Video Campaigns",
+      "9:16 Vertical Video Commercials",
+      "App Walkthrough & Explainer Videos",
     ],
-    suitableFor: "Athletic wear, consumer hardware, luxury goods, and direct-to-consumer product lines.",
-    accent: "#8B5CF6", // Vivid violet
-  },
-  {
-    id: "jewellery-retail-campaigns",
-    number: "04",
-    title: "Jewellery & Retail Campaigns",
-    tagline: "Heritage gold & silver schemes, sacred Tamil typography, and multi-page collateral.",
-    description:
-      "Full promotional collateral suites for high-value retail showrooms. Fusing traditional cultural motifs (diyas, sacred vels, peacock filigree) with clear transactional tabular ledgers.",
-    deliverables: [
-      "Multi-Page Savings Passbooks & Schemes",
-      "Festival Launch Posters (Tamil / English)",
-      "Customer Ledger & Payment Flow Graphics",
-      "Daily Gold & Silver Price Bulletins",
-      "Showroom Counter Banners & Signage",
-    ],
-    suitableFor: "Jewellery houses, luxury retail chains, festive savings clubs, and heritage showrooms.",
-    accent: "#E7FF59", // Acid yellow
-  },
-  {
-    id: "sports-branding",
-    number: "05",
-    title: "Sports Branding",
-    tagline: "Aggressive team crests, athletic typography, and competition gear advertising.",
-    description:
-      "Crafting authentic athletic identities that evoke power, speed, and club pride. Designing competition crests, jersey badges, footwear posters, and locker-room visual assets.",
-    deliverables: [
-      "Club Shield Crests & Monograms",
-      "Jersey Chest Embroidery Master Files",
-      "Footwear & Gear Campaign Posters",
-      "Stadium Banner & Flag Vectors",
-      "Social Matchday & Player Posters",
-    ],
-    suitableFor: "Football clubs, athletic footwear labels, training academies, and sports gear innovators.",
-    accent: "#355CFF", // Vivid cobalt
-  },
-  {
-    id: "invitations-event-design",
-    number: "06",
-    title: "Invitations & Event Design",
-    tagline: "Opulent ceremonial invitations and illustrated launch collateral.",
-    description:
-      "Bespoke invitations for flagship store inaugurations, luxury bridal celebrations, and traditional ceremonies, blending ornate typography with contemporary print finishes.",
-    deliverables: [
-      "Ceremonial Invitation Suites (Print & Digital)",
-      "Grand Opening Announcements & Posters",
-      "Storefront Inauguration Banners",
-      "VIP Gift Vouchers & Guest Passports",
-      "Social RSVP & Messaging Creatives",
-    ],
-    suitableFor: "Boutiques, salon ateliers, bridal brands, and ceremonial milestone hosts.",
-    accent: "#FF5A45", // Electric coral
-  },
-  {
-    id: "ai-video-motion",
-    number: "07",
-    title: "AI-Assisted Video & Motion Content",
-    tagline: "Generative commercial visuals, dynamic pacing, and next-generation motion stories.",
-    description:
-      "Merging artificial intelligence pipelines with professional motion design workflows to create stylized product teasers, generative spatial visuals, and social video ads.",
-    deliverables: [
-      "Generative Video Visual Concepts",
-      "Social Commercial Motion Teasers",
-      "Kinetic Typography Stings & Intros",
-      "Sound Synchronization & Color Grading",
-      "9:16 Social Video Adaptations",
-    ],
-    suitableFor: "Progressive brands and visionary creators seeking high-production motion visuals.",
-    accent: "#8B5CF6", // Vivid violet
+    suitableFor:
+      "Modern commerce brands, direct-to-consumer labels, and forward-thinking businesses demanding high-impact video content.",
+    accent: "#00B8C8", // Electric Teal
   },
 ];
 
@@ -126,35 +68,36 @@ export const creativeProcess: CreativeProcessStep[] = [
   {
     step: "01",
     title: "DISCOVER",
-    subtitle: "Unearthing the core narrative",
+    subtitle: "Brand DNA & Strategic Direction",
     description:
-      "Deconstructing brand DNA, competitive positioning, and target audience psychology to define the strategic creative compass.",
-    deliverables: ["Visual Moodboard", "Creative Direction Brief", "Strategic Angle"],
+      "Deconstructing your brand identity, target demographic, and production requirements to define an airtight creative compass.",
+    deliverables: ["Creative Direction Brief", "Material & Finish Specs", "Visual Direction"],
   },
   {
     step: "02",
     title: "CONCEPT",
-    subtitle: "Pushing aesthetic boundaries",
+    subtitle: "Art Direction & Composition",
     description:
-      "Developing bold typographic systems, spatial compositions, and high-contrast color studies before committing to final production.",
-    deliverables: ["Style Frames", "Directional Spreads", "Typographic Studies"],
+      "Developing bold typographic systems, layout structures, and high-contrast colour studies before committing to final output.",
+    deliverables: ["Concept Proofs", "Grid Architecture", "Motion Storyboards"],
   },
   {
     step: "03",
     title: "DESIGN",
-    subtitle: "Obsessing over craft & fidelity",
+    subtitle: "Obsessing Over Vector & Motion Craft",
     description:
-      "Refining lighting, materials, balance, kerning, and production tolerances until every asset meets gallery-grade standards.",
-    deliverables: ["Master Art Direction", "Component Architecture", "Polished Assets"],
+      "Refining typography, kerning, lighting, textures, and video choreography until every deliverable meets gallery-grade standards.",
+    deliverables: ["Master Vector Art", "Video Cut & Audio Sync", "Prepress Proofing"],
   },
   {
     step: "04",
-    title: "DELIVER",
-    subtitle: "Launch-ready execution",
+    title: "PRODUCE",
+    subtitle: "Into Reality — Print & Launch",
     description:
-      "Delivering print-ready vectors, web-optimized raster formats, and modular guidelines engineered for flawless omnichannel deployment.",
-    deliverables: ["Complete Asset Kit", "Production Specifications", "Deployment Guide"],
+      "Delivering calibrated press-ready CMYK files, physical offset/digital print production, and high-bitrate video renders for immediate deployment.",
+    deliverables: ["Digital/Offset Print Output", "Master Vector Archives", "Broadcast 4K Video Files"],
   },
 ];
 
+// Backwards-compatible alias
 export const processSteps = creativeProcess;

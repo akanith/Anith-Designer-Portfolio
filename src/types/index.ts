@@ -1,5 +1,10 @@
 export type ProjectCategory =
   | "All Work"
+  | "Branding & Logo Design"
+  | "Posters & Advertising Design"
+  | "Business & Promotional Materials"
+  | "Digital & Offset Printing"
+  | "AI Advertisement Videos"
   | "Brand Identity & Logo Design"
   | "Social Media & Advertising Posters"
   | "Jewellery Branding — Ramyas Jeweller"
@@ -21,6 +26,14 @@ export interface ProjectImage {
   aspectRatio?: "square" | "portrait" | "landscape" | "poster";
 }
 
+export interface ProjectVideo {
+  url: string;
+  poster?: string;
+  title: string;
+  category?: string;
+  type?: string;
+}
+
 export interface Project {
   slug: string;
   title: string;
@@ -33,6 +46,7 @@ export interface Project {
   cover: string;
   coverAspect?: "square" | "portrait" | "landscape" | "poster";
   images: ProjectImage[];
+  videos?: ProjectVideo[];
   featured: boolean;
   featuredOrder?: number;
   deliverables: string[];

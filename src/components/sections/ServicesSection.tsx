@@ -87,11 +87,11 @@ export default function ServicesSection() {
           </div>
         </div>
 
-        {/* CHAPTER 05: CAPABILITIES (The 7 Studio Services) */}
+        {/* CHAPTER 05: CAPABILITIES (The 3 Studio Production Verticals) */}
         <div className="border-t border-ink-border pt-20">
           <div className="flex items-center gap-2 mb-3">
-            <span className="flex h-2 w-2 rounded-full bg-accent-coral" />
-            <span className="font-mono text-xs uppercase tracking-widest text-accent-coral font-semibold">
+            <span className="flex h-2 w-2 rounded-full bg-[#00B8C8]" />
+            <span className="font-mono text-xs uppercase tracking-widest text-[#00B8C8] font-semibold">
               {"// CHAPTER 05 — CAPABILITIES"}
             </span>
           </div>
@@ -100,14 +100,14 @@ export default function ServicesSection() {
             <div>
               <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-ink tracking-tight leading-[1.06]">
                 PRECISION CRAFT. <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-cobalt to-accent-coral">
-                  SEVEN CAPABILITIES.
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00B8C8] to-[#65C74A]">
+                  THREE DISCIPLINES.
                 </span>
               </h2>
             </div>
 
             <p className="max-w-md text-sm md:text-base text-ink-secondary font-sans leading-relaxed">
-              Tailored visual architecture and creative executions engineered for founders, retailers, and sports brands.
+              Graphic Design, Digital & Offset Multicolour Printing, and AI Video Creation under one unified production roof.
             </p>
           </div>
 

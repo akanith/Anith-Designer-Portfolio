@@ -4,9 +4,9 @@ import PortfolioGallery from "@/components/portfolio/PortfolioGallery";
 import ContactSection from "@/components/sections/ContactSection";
 
 export const metadata: Metadata = {
-  title: "Selected Work — Anith / ThinkLoom Portfolio",
+  title: "Our Work — ThinkLoom Design and Printing Showcase",
   description:
-    "Explore the complete design archive: brand identities, commercial posters, sports advertising, jewellery campaigns, and creative experiments.",
+    "Explore the complete work archive: brand identities, commercial posters, sports advertising, jewellery campaigns, multicolour printing, and AI videos.",
 };
 
 export default function WorkPage() {

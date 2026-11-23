@@ -1,49 +1,97 @@
-import { Project } from "@/types";
+import { Project, ProjectCategory } from "@/types";
 
 export const projects: Project[] = [
   {
+    slug: "thinkloom-studio-identity",
+    title: "ThinkLoom — Design & Printing Brand Identity",
+    category: "Branding & Logo Design",
+    secondaryCategories: ["Brand Identity & Logo Design", "Digital & Offset Printing"],
+    year: "2024",
+    client: "ThinkLoom Studio",
+    location: "Tamil Nadu, India",
+    cover: "/images/brand/thinkloom-printing-light.png",
+    coverAspect: "square",
+    featured: true,
+    featuredOrder: 1,
+    description:
+      "The official brand identity for ThinkLoom — a multidisciplinary design and printing house uniting graphic design, digital & offset multicolour printing, and AI advertisement videos.",
+    brief:
+      "Develop a distinctive, highly-calibrated brand identity that embodies creative intellect, structured thought threads, and physical print production precision under the tagline 'Beyond Design. Into Reality.'",
+    approach:
+      "Constructed a dynamic geometric insignia with interconnected facets and precision terminals. Optimized for high-contrast visibility on dark apparel, ivory paper stocks, business stationery, and large-format exterior signage.",
+    deliverables: [
+      "Master Studio Brandmark (Light & Dark)",
+      "Official Design & Printing Descriptor Typography",
+      "Palette Tokens (#171717, #F5F1E8, #00B8C8, #65C74A)",
+      "Stationery & Collateral Guidelines",
+      "Vector Master File Suite (SVG, AI, PDF)",
+    ],
+    tools: ["Adobe Illustrator", "Vector Craft", "Figma", "Typography Systems"],
+    images: [
+      {
+        url: "/images/brand/thinkloom-printing-light.png",
+        alt: "ThinkLoom Design and Printing Official Logo — Warm Ivory Canvas",
+        caption: "Master identity on warm ivory background with precision typography",
+        aspectRatio: "square",
+      },
+      {
+        url: "/images/brand/thinkloom-printing-dark.png",
+        alt: "ThinkLoom Design and Printing Official Logo — Charcoal Black Canvas",
+        caption: "High-contrast dark variant engineered for backlit signage and dark packaging",
+        aspectRatio: "square",
+      },
+      {
+        url: "/images/brand/thinkloom-logo.png",
+        alt: "ThinkLoom Geometric Brand Symbol",
+        caption: "Minimal geometric emblem designed for favicon, stamps, and embroidery",
+        aspectRatio: "square",
+      },
+    ],
+  },
+  {
     slug: "messiah-sports-socks",
-    title: "Messiah Sports — Performance Grip Socks Campaign",
+    title: "Messiah Sports — Performance Grip Socks Campaign & Brand System",
     category: "Sports Branding — Messiah Sports",
-    secondaryCategories: ["Social Media & Advertising Posters"],
+    secondaryCategories: ["Branding & Logo Design", "Posters & Advertising Design"],
     year: "2024",
     client: "Messiah Sports",
     location: "Dindigul, India",
     cover: "/images/projects/messiah-sports/socks-campaign.png",
     coverAspect: "poster",
     featured: true,
-    featuredOrder: 1,
+    featuredOrder: 2,
     description:
-      "A high-impact product campaign elevating athletic compression gear through tactile studio staging and focused benefit callouts.",
+      "A high-impact product campaign elevating athletic compression gear through tactile studio staging, multi-angle mockup boards, packaging, and commercial video motion.",
     brief:
       "Messiah Sports required a launch campaign for their professional compression sports socks. The challenge was to communicate technical benefits—soft comfort, breathable fabric, durability, and ergonomic fit—while conveying an aspirational, disciplined brand voice.",
     approach:
-      "Positioned the campaign under the headline 'Small Gear. Big Difference.' By staging the monochromatic socks on architectural stone pedestals alongside a branded training flask, the visuals evoke modern athletic discipline and premium athletic craftsmanship.",
+      "Positioned the campaign under the headline 'Small Gear. Big Difference.' Staged the monochromatic socks on architectural stone pedestals alongside a branded training flask, accompanied by exploded technical specification boards and an energetic commercial product video.",
     deliverables: [
-      "Campaign Art Direction",
-      "Product Advertising Poster",
-      "Feature Callout Infographics",
-      "Technical Spec Board Design",
-      "Social Media Ad Creatives",
+      "Campaign Art Direction & Key Visual",
+      "Product Advertising Posters",
+      "Multi-Angle Stockings Technical Spec Board",
+      "Packaging Box Artwork & Mockups",
+      "Apparel Staging & Display Cards",
+      "Commercial Product Video",
     ],
     tools: ["Adobe Photoshop", "Adobe Illustrator", "3D Staging", "Figma"],
     images: [
       {
         url: "/images/projects/messiah-sports/socks-campaign.png",
         alt: "Messiah Sports Small Gear Big Difference Campaign Poster",
-        caption: "Main campaign poster with studio staging and benefit badges",
+        caption: "Main commercial poster with studio pedestal staging and benefit badges",
         aspectRatio: "poster",
       },
       {
         url: "/images/projects/messiah-sports/stockings-board.png",
         alt: "Messiah Sports Football Stockings Technical Specification Board",
-        caption: "Multi-angle mockup board highlighting anti-slip grip zone, compression, and packaging",
+        caption: "Exploded engineering diagram demonstrating anti-slip grip zone, compression, and packaging",
         aspectRatio: "landscape",
       },
       {
         url: "/images/projects/messiah-sports/brand-identity.png",
         alt: "Messiah Sports Brand Identity & Wordmark",
-        caption: "Official Messiah Sports angular shield mark with modern gothic typography",
+        caption: "Official Messiah Sports angular shield mark with modern gothic athletic typography",
         aspectRatio: "square",
       },
       {
@@ -52,22 +100,102 @@ export const projects: Project[] = [
         caption: "Minimal geometric 'MS' emblem designed for jersey chest badges and compression apparel",
         aspectRatio: "square",
       },
+      {
+        url: "/images/projects/messiah-sports/mockup-packaging-box.jpeg",
+        alt: "Messiah Sports Retail Packaging Box Mockup",
+        caption: "Tactile retail packaging box design featuring high-contrast branding and material callouts",
+        aspectRatio: "square",
+      },
+      {
+        url: "/images/projects/messiah-sports/mockup-brand-display.jpeg",
+        alt: "Messiah Sports Brand Display & Card Presentation",
+        caption: "In-store retail display card and business card collateral mockup",
+        aspectRatio: "landscape",
+      },
+      {
+        url: "/images/projects/messiah-sports/mockup-socks-studio.jpeg",
+        alt: "Messiah Sports Studio Staging Mockup",
+        caption: "Studio product photography staging showcasing high-friction sole pads",
+        aspectRatio: "square",
+      },
+      {
+        url: "/images/projects/messiah-sports/mockup-apparel-staging.jpeg",
+        alt: "Messiah Sports Athletic Apparel Staging Mockup",
+        caption: "Compression fabric texture and chest badge placement mockup",
+        aspectRatio: "square",
+      },
+    ],
+    videos: [
+      {
+        url: "/videos/messiah-sports.mp4",
+        poster: "/images/projects/messiah-sports/socks-campaign.png",
+        title: "Messiah Sports — High-Performance Product Commercial",
+        category: "Product Commercial Video",
+        type: "ai-video",
+      },
+    ],
+  },
+  {
+    slug: "messiah-sports-football-boots",
+    title: "Messiah Sports — Pro Elite Football Boots Poster",
+    category: "Posters & Advertising Design",
+    secondaryCategories: ["Sports Branding — Messiah Sports", "Branding & Logo Design"],
+    year: "2024",
+    client: "Messiah Sports",
+    location: "Dindigul, India",
+    cover: "/images/projects/messiah-sports/football-boots.png",
+    coverAspect: "poster",
+    featured: true,
+    featuredOrder: 3,
+    description:
+      "A dramatic, cinematic advertising poster showcasing pro-tier football studs designed to communicate explosive acceleration, aggressive traction, and competition dominance.",
+    brief:
+      "Craft an international-grade sports advertisement for Messiah's flagship football studs. The creative needed to rival global athletic campaigns from Nike and Adidas while positioning Messiah as a high-performance athletic innovator.",
+    approach:
+      "Staged the iridescent neon-lime football boots on a wet, light-reflective stadium stone base under moody spotlighting. Layered technical specification callouts—molded stud configuration, textured forefoot touch zone, and reinforced heel counter—into an editorial magazine layout.",
+    deliverables: [
+      "Hero Advertising Campaign Poster",
+      "Dynamic Light Beam & Shadow Compositing",
+      "Feature Specification Callout Hierarchy",
+      "Athletic Monogram Integration",
+      "Showroom Poster & Retail Display Artwork",
+    ],
+    tools: ["Adobe Photoshop", "Light Compositing", "Typography Systems"],
+    images: [
+      {
+        url: "/images/projects/messiah-sports/football-boots.png",
+        alt: "Messiah Sports Football Boots Pro Advertising Poster",
+        caption: "Cinematic key visual with atmospheric lighting and product feature callouts",
+        aspectRatio: "poster",
+      },
+      {
+        url: "/images/projects/messiah-sports/brand-identity.png",
+        alt: "Messiah Sports Angular Logo Mark",
+        caption: "Primary athletic brand wordmark",
+        aspectRatio: "square",
+      },
+      {
+        url: "/images/projects/messiah-sports/stockings-board.png",
+        alt: "Messiah Sports Product Lineup",
+        caption: "Cross-product collateral alignment",
+        aspectRatio: "landscape",
+      },
     ],
   },
   {
     slug: "ramyas-jeweller-diwali-savings",
-    title: "Ramyas Jeweller — Festive Diwali Gold Savings System",
-    category: "Jewellery Branding — Ramyas Jeweller",
-    secondaryCategories: ["Social Media & Advertising Posters"],
+    title: "Ramyas Jeweller — Festive Diwali Gold Savings System & 4-Page Passbook",
+    category: "Digital & Offset Printing",
+    secondaryCategories: ["Jewellery Branding — Ramyas Jeweller", "Posters & Advertising Design"],
     year: "2024",
     client: "Ramyas Jeweller",
     location: "Dindigul, Tamil Nadu",
     cover: "/images/projects/ramyas-jeweller/diwali-savings-scheme-brochure.png",
     coverAspect: "poster",
     featured: true,
-    featuredOrder: 2,
+    featuredOrder: 4,
     description:
-      "A complete 4-page promotional passbook and campaign collateral system for an annual festive 12-month gold and silver micro-savings scheme.",
+      "A complete 4-page promotional passbook, master CMYK print PDF, and campaign collateral system for an annual festive 12-month gold and silver micro-savings scheme.",
     brief:
       "Design an authentic, trust-building collateral package for Ramyas Jeweller's marquee festival savings scheme. The design needed to guide retail customers through registration, monthly installment tracking, digital payments, and year-end bonus redemptions.",
     approach:
@@ -75,11 +203,13 @@ export const projects: Project[] = [
     deliverables: [
       "4-Page Savings Passbook & Brochure Spread",
       "Promotional Festival Poster (தீபாவளி சிறுசேமிப்பு திட்டம்)",
+      "Print-Ready CMYK Master PDF (Scheme Final.pdf)",
       "Customer Ledger Table Layout",
       "UPI & WhatsApp Payment Flow Graphic",
       "Tamil Typography & Golden Filigree Borders",
+      "Promotional Video Commercials",
     ],
-    tools: ["Adobe Illustrator", "Adobe Photoshop", "Tamil Typography Systems"],
+    tools: ["Adobe Illustrator", "Adobe Photoshop", "Tamil Typography Systems", "Prepress CMYK"],
     images: [
       {
         url: "/images/projects/ramyas-jeweller/diwali-savings-scheme-brochure.png",
@@ -88,10 +218,40 @@ export const projects: Project[] = [
         aspectRatio: "poster",
       },
       {
+        url: "/images/projects/ramyas-jeweller/savings-scheme-page-1.png",
+        alt: "Ramyas Savings Scheme Cover Page",
+        caption: "Page 01: Festive cover with 3D sculpted gold insignia and auspicious diwali motifs",
+        aspectRatio: "poster",
+      },
+      {
+        url: "/images/projects/ramyas-jeweller/savings-scheme-page-2.png",
+        alt: "Ramyas Savings Scheme Customer Details & UPI Onboarding",
+        caption: "Page 02: Passbook holder profile fields, QR code for GPay/PhonePe, and WhatsApp joins",
+        aspectRatio: "poster",
+      },
+      {
+        url: "/images/projects/ramyas-jeweller/savings-scheme-page-3.png",
+        alt: "Ramyas Savings Scheme 12-Month Ledger Table",
+        caption: "Page 03: Structured installment payment ledger with date, amount, and cashier stamp columns",
+        aspectRatio: "poster",
+      },
+      {
+        url: "/images/projects/ramyas-jeweller/savings-scheme-page-4.png",
+        alt: "Ramyas Savings Scheme Maturity Schedule & Bonus Terms",
+        caption: "Page 04: Gold bonus reward calculation table, rules, and showroom contact directory",
+        aspectRatio: "poster",
+      },
+      {
         url: "/images/projects/ramyas-jeweller/diwali-savings-poster.png",
         alt: "Ramyas Jeweller Diwali Savings Promotional Poster in Tamil",
-        caption: "Festival launch poster highlighting registration window, store visit vs. WhatsApp joining, and GPay/PhonePe options",
+        caption: "Festival launch poster highlighting registration window, store visit vs. WhatsApp joining, and digital payment options",
         aspectRatio: "poster",
+      },
+      {
+        url: "/images/projects/ramyas-jeweller/play-store-header.png",
+        alt: "Ramyas Jeweller Play Store Digital Header Banner",
+        caption: "Digital app store banner supporting mobile onboarding and payment gateway",
+        aspectRatio: "landscape",
       },
       {
         url: "/images/projects/ramyas-jeweller/brand-identity-gold.png",
@@ -106,19 +266,56 @@ export const projects: Project[] = [
         aspectRatio: "square",
       },
     ],
+    videos: [
+      {
+        url: "/videos/ramyas-logo-motion.mov",
+        poster: "/images/projects/ramyas-jeweller/brand-identity-gold.png",
+        title: "Ramyas Jeweller — 3D Gold Logo Motion Graphic",
+        category: "Brand Motion Graphic",
+        type: "motion-graphic",
+      },
+      {
+        url: "/videos/ramyas-diwali-explainer.mp4",
+        poster: "/images/projects/ramyas-jeweller/diwali-savings-poster.png",
+        title: "Ramyas Jeweller — Diwali Savings Scheme Explainer",
+        category: "Promotional Explainer Video",
+        type: "explainer",
+      },
+      {
+        url: "/videos/ramyas-savings-scheme.mp4",
+        poster: "/images/projects/ramyas-jeweller/diwali-savings-scheme-brochure.png",
+        title: "Ramyas Jeweller — Savings Scheme Video Commercial",
+        category: "AI Advertisement Video",
+        type: "ai-video",
+      },
+      {
+        url: "/videos/ramyas-diwali-wishing.mov",
+        poster: "/images/projects/ramyas-jeweller/ad-campaign-1.jpeg",
+        title: "Ramyas Jeweller — Diwali Festive Wishes Commercial",
+        category: "Festive Video Greeting",
+        type: "greeting",
+      },
+      {
+        url: "/videos/ramyas-app-installation.mp4",
+        poster: "/images/projects/ramyas-jeweller/play-store-header.png",
+        title: "Ramyas Jeweller — Mobile App Walkthrough & Install Guide",
+        category: "App Walkthrough Video",
+        type: "walkthrough",
+      },
+    ],
   },
   {
     slug: "ramyas-jeweller-gold-silver-rates",
     title: "Ramyas Jeweller — Daily Market Rate Bulletin System",
-    category: "Jewellery Branding — Ramyas Jeweller",
-    secondaryCategories: ["Social Media & Advertising Posters"],
+    category: "Business & Promotional Materials",
+    secondaryCategories: ["Jewellery Branding — Ramyas Jeweller", "Posters & Advertising Design"],
     year: "2024",
     client: "Ramyas Jeweller",
     location: "Dindigul, Tamil Nadu",
     cover: "/images/projects/ramyas-jeweller/gold-silver-rate-july7.jpeg",
     coverAspect: "poster",
     featured: true,
-    featuredOrder: 3,
+    featuredOrder: 5,
     description:
       "A high-velocity, template-driven social media creative system communicating live 22K/24K gold and silver market prices to over 10,000 daily retail customers.",
     brief:
@@ -161,64 +358,17 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: "messiah-sports-football-boots",
-    title: "Messiah Sports — Pro Elite Football Boots Poster",
-    category: "Sports Branding — Messiah Sports",
-    secondaryCategories: ["Brand Identity & Logo Design"],
-    year: "2024",
-    client: "Messiah Sports",
-    location: "Dindigul, India",
-    cover: "/images/projects/messiah-sports/football-boots.png",
-    coverAspect: "poster",
-    featured: true,
-    featuredOrder: 4,
-    description:
-      "A dramatic, cinematic advertising poster showcasing pro-tier football studs designed to communicate explosive acceleration and aggressive traction.",
-    brief:
-      "Craft an international-grade sports advertisement for Messiah's flagship football studs. The creative needed to rival global athletic campaigns from Nike and Adidas while positioning Messiah as a high-performance local innovator.",
-    approach:
-      "Staged the iridescent neon-lime football boots on a wet, light-reflective stadium stone base under moody spotlighting. Layered technical specification callouts—molded stud configuration, textured forefoot touch zone, and reinforced heel counter—into an editorial magazine layout.",
-    deliverables: [
-      "Hero Advertising Campaign Poster",
-      "Dynamic Light Beam & Shadow Compositing",
-      "Feature Specification Callout Hierarchy",
-      "Athletic Monogram Integration",
-      "Retail Showroom Poster & Digital Assets",
-    ],
-    tools: ["Adobe Photoshop", "Light Compositing", "Typography Systems"],
-    images: [
-      {
-        url: "/images/projects/messiah-sports/football-boots.png",
-        alt: "Messiah Sports Football Boots Pro Advertising Poster",
-        caption: "Cinematic key visual with atmospheric lighting and product feature callouts",
-        aspectRatio: "poster",
-      },
-      {
-        url: "/images/projects/messiah-sports/brand-identity.png",
-        alt: "Messiah Sports Angular Logo Mark",
-        caption: "Primary athletic brand wordmark",
-        aspectRatio: "square",
-      },
-      {
-        url: "/images/projects/messiah-sports/stockings-board.png",
-        alt: "Messiah Sports Product Lineup",
-        caption: "Cross-product collateral alignment",
-        aspectRatio: "landscape",
-      },
-    ],
-  },
-  {
     slug: "swanzaa-couture-identity",
     title: "Swanzaa — Luxury Fashion Couture Monogram",
-    category: "Brand Identity & Logo Design",
-    secondaryCategories: ["Creative Experiments"],
+    category: "Branding & Logo Design",
+    secondaryCategories: ["Brand Identity & Logo Design"],
     year: "2024",
     client: "Swanzaa Atelier",
     location: "Chennai, India",
     cover: "/images/projects/swanzaa/emblem-dark.png",
     coverAspect: "square",
     featured: true,
-    featuredOrder: 5,
+    featuredOrder: 6,
     description:
       "A refined geometric swan monogram and wordmark engineered for an avant-garde apparel label and luxury bespoke boutique.",
     brief:
@@ -229,7 +379,7 @@ export const projects: Project[] = [
       "Geometric Swan Monogram (Light & Dark)",
       "High-Fashion Logotype Pairing",
       "Garment Tag & Woven Label Guidelines",
-      "Embossed Stationery & Box Packaging Mockups",
+      "Embossed Stationery & Box Packaging Specs",
       "Vector Master File Suite",
     ],
     tools: ["Adobe Illustrator", "Grid Geometry", "Vector Craft"],
@@ -251,15 +401,15 @@ export const projects: Project[] = [
   {
     slug: "lensora-visual-identity",
     title: "Lensora — Optometry & Eyewear Studio Identity",
-    category: "Brand Identity & Logo Design",
-    secondaryCategories: ["Creative Experiments"],
+    category: "Branding & Logo Design",
+    secondaryCategories: ["Brand Identity & Logo Design"],
     year: "2024",
     client: "Lensora Optical",
     location: "Bangalore, India",
     cover: "/images/projects/lensora/logo-dark.png",
     coverAspect: "square",
     featured: true,
-    featuredOrder: 6,
+    featuredOrder: 7,
     description:
       "A minimalist optical brand identity fusing optical lens curvature with the letterform 'L' for a boutique designer eyewear showroom.",
     brief:
@@ -292,8 +442,8 @@ export const projects: Project[] = [
   {
     slug: "blue-waves-fc-crest",
     title: "Blue Waves FC — Football Club Shield Crest",
-    category: "Sports Branding — Messiah Sports",
-    secondaryCategories: ["Brand Identity & Logo Design"],
+    category: "Branding & Logo Design",
+    secondaryCategories: ["Sports Branding — Messiah Sports", "Brand Identity & Logo Design"],
     year: "2024",
     client: "Blue Waves Football Club",
     location: "Kanyakumari, India",
@@ -323,43 +473,10 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: "cr7-celebration-fan-art",
-    title: "Cristiano Ronaldo (CR7) — Kinetic Sports Poster",
-    category: "Sports Branding — Messiah Sports",
-    secondaryCategories: ["Creative Experiments"],
-    year: "2024",
-    client: "Personal Editorial Project",
-    location: "India",
-    cover: "/images/projects/football-wallpaper/cr7-celebration-wallpaper.png",
-    coverAspect: "poster",
-    featured: false,
-    description:
-      "A vertical mobile wallpaper and kinetic poster capturing Cristiano Ronaldo's iconic 'Siu' celebration with stylized lighting and stadium typography.",
-    brief:
-      "Create an electric, high-energy vertical sports artwork that merges dynamic action photography with magazine-style kinetic typography.",
-    approach:
-      "Blended high-contrast rim lighting, energetic halftone textures, and large-scale editorial numerals ('07') behind the celebrating silhouette.",
-    deliverables: [
-      "9:16 High-Resolution Mobile Wallpaper",
-      "Vertical Editorial Poster Art",
-      "Kinetic Athletic Typography Layout",
-      "Dynamic Stadium Flare Effects",
-    ],
-    tools: ["Adobe Photoshop", "Digital Compositing", "Typography"],
-    images: [
-      {
-        url: "/images/projects/football-wallpaper/cr7-celebration-wallpaper.png",
-        alt: "Cristiano Ronaldo CR7 Celebration Wallpaper Poster",
-        caption: "High-contrast dynamic phone wallpaper with layered typography and stadium backdrop",
-        aspectRatio: "poster",
-      },
-    ],
-  },
-  {
     slug: "kuttyverse-toys-and-launch",
-    title: "Kuttyverse — Children's World Brand & Grand Opening",
-    category: "Creative Experiments",
-    secondaryCategories: ["Brand Identity & Logo Design"],
+    title: "Kuttyverse — Children's World Brand & Grand Opening Flyer",
+    category: "Digital & Offset Printing",
+    secondaryCategories: ["Business & Promotional Materials", "Branding & Logo Design"],
     year: "2024",
     client: "Kuttyverse Retail",
     location: "Madurai, India",
@@ -367,23 +484,23 @@ export const projects: Project[] = [
     coverAspect: "poster",
     featured: false,
     description:
-      "A vibrant, playful visual identity and illustrated grand opening launch poster for a flagship toy store and children's amusement boutique.",
+      "A vibrant, playful visual identity and promotional grand opening launch flyer for a flagship toy store and children's amusement boutique.",
     brief:
-      "Design an enchanting, approachable brand identity and launch invitation for Kuttyverse that excites kids and reassures parents.",
+      "Design an enchanting, approachable brand identity and launch invitation flyer for Kuttyverse that excites children and builds trust with parents.",
     approach:
       "Crafted rounded, bouncy custom lettering alongside cheerful character illustrations, celebratory confetti, and festive retail discount bursts.",
     deliverables: [
       "Toy Retail Wordmark & Character Seal",
-      "Grand Opening Invitation Poster",
+      "Grand Opening Invitation Flyer & Print Art",
       "Storefront Inauguration Banner Layout",
-      "Promotional Gift Voucher & Flyer",
+      "Promotional Gift Voucher & Poster",
     ],
-    tools: ["Adobe Illustrator", "Adobe Photoshop", "Character Styling"],
+    tools: ["Adobe Illustrator", "Adobe Photoshop", "Print Preparation"],
     images: [
       {
         url: "/images/projects/kuttyverse/grand-opening-invitation.png",
         alt: "Kuttyverse Grand Opening Invitation Poster",
-        caption: "Illustrated launch poster highlighting store opening date, special gifts, and venue location",
+        caption: "Illustrated launch flyer highlighting store opening date, special gifts, and venue location",
         aspectRatio: "poster",
       },
       {
@@ -396,9 +513,9 @@ export const projects: Project[] = [
   },
   {
     slug: "pretty-makeover-artistry",
-    title: "Pretty Makeover — Luxury Bridal Makeup Identity",
-    category: "Creative Experiments",
-    secondaryCategories: ["Brand Identity & Logo Design"],
+    title: "Pretty Makeover — Luxury Bridal Identity & Ceremonial Card",
+    category: "Digital & Offset Printing",
+    secondaryCategories: ["Branding & Logo Design", "Business & Promotional Materials"],
     year: "2024",
     client: "Pretty Makeover Artistry",
     location: "Coimbatore, India",
@@ -406,7 +523,7 @@ export const projects: Project[] = [
     coverAspect: "poster",
     featured: false,
     description:
-      "An opulent brand mark and traditional housewarming ceremonial invitation system blending luxury salon aesthetics with classical Indian motifs.",
+      "An opulent brand mark and traditional ceremonial housewarming invitation system blending luxury salon aesthetics with classical Indian motifs.",
     brief:
       "Create an elegant identity for an upscale bridal makeup studio, as well as a lavish ceremonial invitation for the founder's studio opening.",
     approach:
@@ -434,59 +551,63 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: "thinkloom-studio-identity",
-    title: "ThinkLoom — Creative Technology & Motion Identity",
-    category: "AI Video & Motion Design",
-    secondaryCategories: ["Brand Identity & Logo Design"],
+    slug: "cr7-celebration-fan-art",
+    title: "Cristiano Ronaldo (CR7) — Kinetic Sports Poster & Wall Art",
+    category: "Posters & Advertising Design",
+    secondaryCategories: ["Sports Branding — Messiah Sports"],
     year: "2024",
-    client: "ThinkLoom Studio",
-    location: "Tamil Nadu, India",
-    cover: "/images/raw/Think Loom.png",
-    coverAspect: "square",
-    featured: true,
-    featuredOrder: 7,
+    client: "Commercial Print Art",
+    location: "India",
+    cover: "/images/projects/football-wallpaper/cr7-celebration-wallpaper.png",
+    coverAspect: "poster",
+    featured: false,
     description:
-      "The master brand mark and motion design identity for ThinkLoom—the experimental creative technology studio powering Anith's work.",
+      "A vertical mobile wallpaper and kinetic sports poster capturing Cristiano Ronaldo's iconic celebration with stylized stadium lighting and editorial typography.",
     brief:
-      "Design an iconic mark reflecting the intersection of loom-woven structured thought and futuristic digital technology.",
+      "Create an electric, high-energy vertical sports artwork that merges dynamic action photography with magazine-style kinetic typography.",
     approach:
-      "Constructed a cybernetic intertwining geometric monogram that symbolizes interconnected design threads, algorithmic intelligence, and sharp execution.",
+      "Blended high-contrast rim lighting, energetic halftone textures, and large-scale editorial numerals ('07') behind the celebrating silhouette.",
     deliverables: [
-      "Master Studio Brandmark",
-      "Motion Graphics & Intro Stings",
-      "AI Video & Commercial Concept Art",
-      "Studio Presentation Deck System",
+      "9:16 High-Resolution Mobile Wallpaper",
+      "Vertical Editorial Poster Art",
+      "Kinetic Athletic Typography Layout",
+      "Stadium Halftone Flare Effects",
     ],
-    tools: ["After Effects", "Blender 3D", "Midjourney / ComfyUI", "Illustrator"],
+    tools: ["Adobe Photoshop", "Digital Compositing", "Typography"],
     images: [
       {
-        url: "/images/raw/Think Loom.png",
-        alt: "ThinkLoom Official Master Studio Brandmark",
-        caption: "Geometric cybernetic emblem representing woven creative intellect and technical mastery",
-        aspectRatio: "square",
+        url: "/images/projects/football-wallpaper/cr7-celebration-wallpaper.png",
+        alt: "Cristiano Ronaldo CR7 Celebration Wallpaper Poster",
+        caption: "High-contrast dynamic phone wallpaper with layered typography and stadium backdrop",
+        aspectRatio: "poster",
+      },
+      {
+        url: "/images/projects/creative/desktop-wallpaper.png",
+        alt: "CR7 Celebration Desktop Wallpaper Artwork",
+        caption: "Wide-format stadium desktop wallpaper composition",
+        aspectRatio: "landscape",
       },
     ],
   },
 ];
 
 export function getProjectBySlug(slug: string): Project | undefined {
-  return projects.find(p => p.slug === slug);
+  return projects.find((p) => p.slug === slug);
 }
 
 export function getAdjacentProjects(slug: string): { prev: Project | null; next: Project | null } {
-  const index = projects.findIndex(p => p.slug === slug);
+  const index = projects.findIndex((p) => p.slug === slug);
   if (index === -1) return { prev: null, next: null };
   const prev = index > 0 ? projects[index - 1] : null;
   const next = index < projects.length - 1 ? projects[index + 1] : null;
   return { prev, next };
 }
 
-export const categories: import("@/types").ProjectCategory[] = [
+export const categories: ProjectCategory[] = [
   "All Work",
-  "Brand Identity & Logo Design",
-  "Social Media & Advertising Posters",
-  "Jewellery Branding — Ramyas Jeweller",
-  "Sports Branding — Messiah Sports",
-  "AI Video & Motion Design",
-  "Creative Experiments",
+  "Branding & Logo Design",
+  "Posters & Advertising Design",
+  "Business & Promotional Materials",
+  "Digital & Offset Printing",
+  "AI Advertisement Videos",
 ];

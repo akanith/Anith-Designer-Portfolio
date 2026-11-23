@@ -216,6 +216,48 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
           </div>
         </div>
 
+        {/* Commercial Video Section (if applicable) */}
+        {project.videos && project.videos.length > 0 && (
+          <div className="mb-24">
+            <div className="flex items-center justify-between border-b border-white/10 pb-6 mb-10">
+              <h2 className="font-display text-2xl sm:text-3xl font-bold text-warm-white">
+                Motion & Commercial Videos ({project.videos.length})
+              </h2>
+              <span className="font-mono text-xs text-[#00B8C8] uppercase font-bold">
+                ● Video Suite
+              </span>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {project.videos.map((vid, vIdx) => (
+                <div
+                  key={vIdx}
+                  className="rounded-xl border border-white/10 bg-obsidian-card p-4 overflow-hidden"
+                >
+                  <div className="relative aspect-video w-full rounded-lg overflow-hidden bg-neutral-950">
+                    <video
+                      src={vid.url}
+                      poster={vid.poster}
+                      controls
+                      playsInline
+                      preload="metadata"
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  <div className="p-3 border-t border-white/10 mt-3">
+                    <span className="font-mono text-[10px] uppercase tracking-wider text-[#00B8C8] font-bold block">
+                      {vid.category || "Commercial Motion"}
+                    </span>
+                    <h3 className="font-sans text-sm font-bold text-warm-white mt-0.5">
+                      {vid.title}
+                    </h3>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
         {/* Previous / Next Case Study Navigation */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 border-t border-white/10 pt-10">
           {prev ? (

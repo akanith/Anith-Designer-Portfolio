@@ -25,7 +25,7 @@ export default function ContactSection() {
     e.preventDefault();
     // Generate direct WhatsApp link or mailto
     const text = encodeURIComponent(
-      `Hi Anith / ThinkLoom,\n\nName: ${name}\nEmail: ${email}\nService: ${selectedService}\n\nProject details: ${message}`
+      `Hi ThinkLoom,\n\nName: ${name}\nEmail: ${email}\nService: ${selectedService}\n\nProject details: ${message}`
     );
     window.open(`https://wa.me/918778173681?text=${text}`, "_blank");
     setSubmitted(true);
@@ -134,7 +134,7 @@ export default function ContactSection() {
                   Inquiry Dispatched
                 </h3>
                 <p className="mt-2 text-sm text-ink-secondary font-sans max-w-sm mx-auto">
-                  WhatsApp will open with your pre-formatted brief. Anith will review your project details directly.
+                  WhatsApp will open with your pre-formatted brief. ThinkLoom will review your project details directly.
                 </p>
                 <button
                   onClick={() => setSubmitted(false)}

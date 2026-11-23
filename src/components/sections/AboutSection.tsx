@@ -24,24 +24,24 @@ export default function AboutSection() {
           <div className="lg:col-span-8">
             <div className="flex items-center gap-2 mb-4">
               <span className="flex h-2 w-2 rounded-full bg-accent-cobalt" />
-              <span className="font-mono text-xs uppercase tracking-widest text-accent-cobalt font-semibold">
-                {"// ANITH / THINKLOOM CREATIVE STUDIO"}
+              <span className="font-mono text-xs uppercase tracking-widest text-[#00B8C8] font-semibold">
+                {"// THINKLOOM DESIGN AND PRINTING STUDIO"}
               </span>
             </div>
 
             <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-ink tracking-tight leading-[1.06]">
-              DESIGN IS HOW <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-cobalt via-accent-violet to-accent-coral">
-                IDEAS BECOME VISIBLE.
+              BEYOND DESIGN. <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00B8C8] via-[#65C74A] to-[#FF5A45]">
+                INTO REALITY.
               </span>
             </h2>
 
             <div className="mt-8 space-y-4 max-w-2xl text-base md:text-lg text-ink-secondary font-sans leading-relaxed">
               <p>
-                I am <span className="text-ink font-bold">Anith</span>, an independent designer creating identities, campaigns, and visual experiences backed by the creative studio <span className="text-accent-cobalt font-mono font-bold">ThinkLoom</span>.
+                <strong className="text-ink font-bold">ThinkLoom</strong> is a multidisciplinary design and printing house uniting graphic design, digital & offset multicolour printing, and generative AI video creation.
               </p>
               <p>
-                My work spans brand identity systems, high-voltage advertising posters, sports graphics, retail jewellery collateral, and AI-assisted motion narratives. Rather than relying on generic templates or repetitive formulas, I treat each project as a unique spatial artifact designed to build durable brand equity.
+                Our work spans brand identity systems, high-voltage advertising posters, retail jewellery passbooks, packaging specifications, and AI-assisted motion commercials. We move ambitious ideas from vector concepts into calibrated print production and high-impact digital broadcasts.
               </p>
             </div>
 
