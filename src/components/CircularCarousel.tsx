@@ -44,6 +44,7 @@ export interface CircularCarouselProps {
   items: CarouselPoster[];
   onOpenLightbox?: (poster: CarouselPoster) => void;
   className?: string;
+  autoRotate?: boolean;
   preset?: "cylinder" | "orbit" | "wheel" | "panorama";
   cardWidth?: number;
   aspectRatio?: number;
@@ -177,7 +178,8 @@ const CircularCarousel = forwardRef<CircularCarouselHandle, CircularCarouselProp
     aspectRatio = 0.67, // authentic vertical poster 2:3 ratio
     gap = 26,
     speed = 12,
-    autoplay = "drift",
+    autoplay: autoplayProp = "drift",
+    autoRotate,
     direction = "left",
     fadeColor = "#171717",
     innerShade = 0.5,
@@ -189,6 +191,7 @@ const CircularCarousel = forwardRef<CircularCarouselHandle, CircularCarouselProp
   },
   ref
 ) {
+  const autoplay = autoRotate !== undefined ? (autoRotate ? "drift" : "off") : autoplayProp;
   // Ensure a minimum of 10 items for optimal cylindrical ring perspective
   const incoming = useMemo(() => {
     if (!items || items.length === 0) return [];
@@ -911,22 +914,24 @@ const CircularCarousel = forwardRef<CircularCarouselHandle, CircularCarouselProp
                   >
                     {tiles.map(tile => renderTile(item, tile, false, index))}
                     {layout.backfaces && tiles.map(tile => renderTile(item, tile, true, index))}
-
-                    {/* Technical badge overlay on focused card */}
-                    {index === active && (
-                      <div 
-                        className="absolute -top-7 left-1/2 -translate-x-1/2 pointer-events-none transition-all duration-300 flex items-center gap-1.5 whitespace-nowrap bg-neutral-950/90 border border-[#00B8C8] px-2.5 py-0.5 rounded-full text-[9px] font-mono text-[#00B8C8] font-bold shadow-md uppercase tracking-wider"
-                      >
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#00B8C8] animate-pulse" />
-                        <span>FOCUSED // CLICK TO VIEW FULLSCREEN</span>
-                      </div>
-                    )}
                   </div>
                 ))}
               </div>
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Dedicated Centered Focus Action Label Underneath Entire Carousel */}
+      <div className="flex justify-center items-center mt-5 sm:mt-6 mb-2">
+        <button
+          type="button"
+          onClick={() => onOpenLightbox && currentPoster && onOpenLightbox(currentPoster)}
+          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-neutral-950 text-[#00B8C8] border border-[#00B8C8]/60 shadow-xs font-mono text-[11px] sm:text-xs font-bold uppercase tracking-wider hover:bg-neutral-900 hover:border-[#00B8C8] hover:shadow-md transition-all cursor-pointer"
+        >
+          <span className="text-[#00B8C8] text-xs leading-none">●</span>
+          <span>FOCUSED // CLICK TO VIEW FULLSCREEN</span>
+        </button>
       </div>
 
       {/* Control Deck & Active Poster Narrative */}
