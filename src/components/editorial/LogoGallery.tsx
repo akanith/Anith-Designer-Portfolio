@@ -57,7 +57,7 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
       brandName: "ThinkLoom",
       client: "ThinkLoom Design & Printing",
       category: "Master Brand & Production House",
-      year: "2024",
+      year: "2025",
       projectSlug: "thinkloom-studio-identity",
       orbitImage: "/images/orbit/thinkloom.png",
       archiveImage: "/images/brand/thinkloom-printing-dark.png",
@@ -96,7 +96,7 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
       brandName: "Messiah Sports",
       client: "Messiah Athletic Apparel",
       category: "Sports Branding",
-      year: "2024",
+      year: "2026",
       projectSlug: "messiah-sports-socks",
       orbitImage: "/images/orbit/messiah-sports.png",
       archiveImage: "/images/projects/messiah-sports/brand-identity.png",
@@ -128,7 +128,7 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
       brandName: "Ramyas Jeweller",
       client: "Ramyas Heritage Gold",
       category: "Jewellery & Luxury Heritage",
-      year: "2024",
+      year: "2026",
       projectSlug: "ramyas-jeweller-diwali-savings",
       orbitImage: "/images/orbit/ramyas-jeweller.png",
       archiveImage: "/images/projects/ramyas-jeweller/brand-identity-gold.png",
@@ -160,7 +160,7 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
       brandName: "Blue Waves FC",
       client: "Blue Waves Football Club",
       category: "Sports Crest & Heraldry",
-      year: "2024",
+      year: "2025",
       projectSlug: "blue-waves-fc-crest",
       orbitImage: "/images/orbit/blue-waves-fc.png",
       archiveImage: "/images/projects/blue-waves-fc/club-crest.png",
@@ -184,7 +184,7 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
       brandName: "Swanzaa",
       client: "Swanzaa Atelier",
       category: "Haute Couture & Fashion",
-      year: "2024",
+      year: "2025",
       projectSlug: "swanzaa-couture-identity",
       orbitImage: "/images/orbit/swanzaa.png",
       archiveImage: "/images/projects/swanzaa/emblem-dark.png",
@@ -216,7 +216,7 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
       brandName: "Lensora",
       client: "Lensora Optical",
       category: "Optometry & Studio Identity",
-      year: "2024",
+      year: "2025",
       projectSlug: "lensora-visual-identity",
       orbitImage: "/images/orbit/lensora.png",
       archiveImage: "/images/projects/lensora/logo-dark.png",
@@ -248,7 +248,7 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
       brandName: "Pretty Makeover Artistry",
       client: "Pretty Makeover Studio",
       category: "Bridal Calligraphy & Beauty",
-      year: "2024",
+      year: "2025",
       projectSlug: "pretty-makeover-artistry",
       orbitImage: "/images/orbit/pretty-makeover.png",
       archiveImage: "/images/projects/pretty-makeover/brand-logo.png",
@@ -272,7 +272,7 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
       brandName: "Kuttyverse",
       client: "Kuttyverse Retail & Toys",
       category: "Children's Retail & Toys",
-      year: "2024",
+      year: "2025",
       projectSlug: "kuttyverse-toys-and-launch",
       orbitImage: "/images/orbit/kuttyverse.png",
       archiveImage: "/images/projects/kuttyverse/brand-logo.png",
@@ -473,9 +473,9 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
                     onMouseLeave={() => setActiveBrandIndex(null)}
                     className="relative w-full h-full flex items-center justify-center group"
                   >
-                    {/* Refined Square Emblem Badge Container */}
+                    {/* Refined Square Emblem Badge Container — 8px Corner Radius */}
                     <div
-                      className={`relative w-[92px] h-[92px] sm:w-[100px] sm:h-[100px] rounded-xl sm:rounded-2xl p-2 sm:p-2.5 flex items-center justify-center transition-all duration-300 ${brand.orbitBg} ${brand.orbitBorder} ${
+                      className={`relative w-[92px] h-[92px] sm:w-[100px] sm:h-[100px] rounded-[8px] p-2 sm:p-2.5 flex items-center justify-center transition-all duration-300 ${brand.orbitBg} ${brand.orbitBorder} ${
                         isHovered 
                           ? "scale-110 ring-1.5 ring-[#00B8C8] shadow-[0_12px_28px_rgba(0,184,200,0.22)] -translate-y-1" 
                           : "hover:scale-105"

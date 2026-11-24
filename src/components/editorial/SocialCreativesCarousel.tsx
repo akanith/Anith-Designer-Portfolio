@@ -221,7 +221,6 @@ export default function SocialCreativesCarousel() {
       <div className="absolute top-8 right-8 font-mono text-[10px] text-neutral-400 tracking-widest uppercase hidden sm:block pointer-events-none">
         CIRCULAR CAROUSEL // 3D CYLINDER STAGE
       </div>
-      <div className="absolute inset-0 architectural-grid opacity-50 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Section Header */}

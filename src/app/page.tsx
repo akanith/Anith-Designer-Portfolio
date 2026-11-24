@@ -77,7 +77,7 @@ export default function HomePage() {
   }, []);
 
   return (
-    <main className="relative min-h-screen bg-[#F5F2EB] text-neutral-900 selection:bg-[#00B8C8] selection:text-neutral-950 overflow-x-hidden">
+    <main className="relative min-h-screen bg-[#F5F2EB] text-neutral-900 selection:bg-[#00B8C8] selection:text-neutral-950 overflow-x-clip">
       {/* 1. Introduction — Textured Editorial Hero */}
       <EditorialHero />
 
