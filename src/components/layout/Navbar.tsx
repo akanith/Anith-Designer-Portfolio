@@ -47,12 +47,12 @@ export default function Navbar() {
             className="flex items-center gap-2.5 group"
             data-cursor="hover"
           >
-            <div className="relative w-7 h-7 sm:w-8 sm:h-8 rounded-md bg-[#171717] p-1 flex items-center justify-center shadow-xs overflow-hidden">
+            <div className="relative w-7 h-7 sm:w-8 sm:h-8 rounded-md bg-black p-1 flex items-center justify-center shadow-xs overflow-hidden">
               <Image
-                src="/images/brand/thinkloom-logo.png"
-                alt="ThinkLoom Logo"
-                width={28}
-                height={28}
+                src="/images/brand/thinkloom-bulb-symbol.png"
+                alt="ThinkLoom Lightbulb Symbol"
+                width={32}
+                height={32}
                 className="w-full h-full object-contain"
                 priority
               />
@@ -118,13 +118,15 @@ export default function Navbar() {
             {/* Close button in drawer */}
             <div className="flex justify-between items-center border-b border-ink-border pb-6">
               <div className="flex items-center gap-2.5">
-                <Image
-                  src="/images/brand/thinkloom-logo.png"
-                  alt="ThinkLoom Logo"
-                  width={24}
-                  height={24}
-                  className="w-6 h-6 object-contain rounded-sm bg-neutral-900"
-                />
+                <div className="relative w-6 h-6 rounded-sm bg-black p-0.5 flex items-center justify-center overflow-hidden">
+                  <Image
+                    src="/images/brand/thinkloom-bulb-symbol.png"
+                    alt="ThinkLoom Lightbulb Symbol"
+                    width={24}
+                    height={24}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
                 <span className="font-mono text-xs uppercase tracking-widest text-[#00B8C8] font-bold">
                   THINKLOOM // NAVIGATION
                 </span>

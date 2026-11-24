@@ -262,12 +262,19 @@ export default function MotionLab() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [togglePlay, handlePrev, handleNext, toggleMute, toggleFullscreen, duration]);
 
-  // Keep active filmstrip item visible in scroll view
+  // Keep active filmstrip item visible in horizontal filmstrip scroll view without scrolling window
+  const isFirstMountRef = useRef(true);
   useEffect(() => {
-    if (!filmstripRef.current) return;
-    const activeItem = filmstripRef.current.children[activeIdx] as HTMLElement;
+    if (isFirstMountRef.current) {
+      isFirstMountRef.current = false;
+      return;
+    }
+    const container = filmstripRef.current;
+    if (!container) return;
+    const activeItem = container.children[activeIdx] as HTMLElement;
     if (activeItem) {
-      activeItem.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+      const scrollTarget = activeItem.offsetLeft - container.offsetWidth / 2 + activeItem.offsetWidth / 2;
+      container.scrollTo({ left: Math.max(0, scrollTarget), behavior: "smooth" });
     }
   }, [activeIdx]);
 

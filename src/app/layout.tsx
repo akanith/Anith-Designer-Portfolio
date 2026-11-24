@@ -89,6 +89,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${sans.variable} ${display.variable} ${mono.variable} ${brush.variable} scroll-smooth`}>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if (typeof window !== 'undefined' && 'scrollRestoration' in history) {
+                history.scrollRestoration = 'manual';
+              }
+            `,
+          }}
+        />
+      </head>
       <body className="font-sans min-h-screen bg-canvas text-ink antialiased relative selection:bg-accent-coral selection:text-white">
         {/* Custom pointer cursor for desktop */}
         <CustomCursor />

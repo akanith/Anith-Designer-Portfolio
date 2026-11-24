@@ -50,7 +50,7 @@ export interface CircularCarouselProps {
   aspectRatio?: number;
   gap?: number;
   speed?: number;
-  autoplay?: "drift" | "step" | "off";
+  autoplay?: "drift" | "step" | "off" | boolean;
   direction?: "left" | "right";
   fadeColor?: string;
   innerShade?: number;
@@ -191,7 +191,15 @@ const CircularCarousel = forwardRef<CircularCarouselHandle, CircularCarouselProp
   },
   ref
 ) {
-  const autoplay = autoRotate !== undefined ? (autoRotate ? "drift" : "off") : autoplayProp;
+  const resolveAutoplay = (
+    ap?: "drift" | "step" | "off" | boolean,
+    ar?: boolean
+  ): "drift" | "step" | "off" => {
+    if (ar !== undefined) return ar ? "drift" : "off";
+    if (typeof ap === "boolean") return ap ? "drift" : "off";
+    return ap ?? "drift";
+  };
+  const autoplay = resolveAutoplay(autoplayProp, autoRotate);
   // Ensure a minimum of 10 items for optimal cylindrical ring perspective
   const incoming = useMemo(() => {
     if (!items || items.length === 0) return [];
@@ -341,6 +349,10 @@ const CircularCarousel = forwardRef<CircularCarouselHandle, CircularCarouselProp
     stateRef.current.dir = directionSign;
     wakeRef.current();
   }, [directionSign]);
+
+  useEffect(() => {
+    wakeRef.current();
+  }, [autoplay, isPausedByUser]);
 
   const incomingRef = useRef(incoming);
   incomingRef.current = incoming;
