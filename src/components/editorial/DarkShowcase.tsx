@@ -1,8 +1,7 @@
 "use client";
 
-import React, { useState, useRef } from "react";
+import React from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { 
   Download,
   CheckCircle2
@@ -11,7 +10,6 @@ import { projects } from "@/data/projects";
 import { Project } from "@/types";
 import MotionLab from "@/components/editorial/MotionLab";
 import SocialCreativesCarousel from "@/components/editorial/SocialCreativesCarousel";
-import ProjectShowcasePerspective from "@/components/editorial/ProjectShowcasePerspective";
 
 interface DarkShowcaseProps {
   onSelectProject?: (project: Project) => void;
@@ -57,12 +55,7 @@ export default function DarkShowcase({ onSelectProject }: DarkShowcaseProps) {
   return (
     <>
       {/* =========================================================================
-          CHAPTER 01: PROJECT SHOWCASE — 3D PERSPECTIVE CARD GALLERY
-          ========================================================================= */}
-      <ProjectShowcasePerspective onSelectProject={onSelectProject} />
-
-      {/* =========================================================================
-          CHAPTER 02: THINKLOOM / MOTION LAB (CINEMATIC FILM EXHIBITION)
+          CHAPTER 01: THINKLOOM / MOTION LAB (CINEMATIC FILM EXHIBITION)
           ========================================================================= */}
       <section id="motion-lab-cinema" className="relative w-full bg-[#0D0D11] text-white py-24 sm:py-32 border-b-2 border-neutral-900 overflow-hidden">
         {/* Background Architectural Grid Pattern */}
@@ -74,7 +67,7 @@ export default function DarkShowcase({ onSelectProject }: DarkShowcaseProps) {
       </section>
 
       {/* =========================================================================
-          CHAPTER 03: DIGITAL & OFFSET PRINTING PRODUCTION (Warm Ivory Prepress Spread)
+          CHAPTER 02: DIGITAL & OFFSET PRINTING PRODUCTION (Warm Ivory Prepress Spread)
           ========================================================================= */}
       <div className="w-full bg-[#F5F1E8] text-[#171717] py-24 sm:py-32 border-b-2 border-neutral-900 relative overflow-hidden">
         {/* Architectural drafting grid on ivory */}
@@ -169,7 +162,7 @@ export default function DarkShowcase({ onSelectProject }: DarkShowcaseProps) {
       </div>
 
       {/* =========================================================================
-          CHAPTER 04: SOCIAL MEDIA CREATIVES (REACT BITS CIRCULAR CAROUSEL)
+          CHAPTER 03: SOCIAL MEDIA CREATIVES (REACT BITS CIRCULAR CAROUSEL)
           ========================================================================= */}
       <SocialCreativesCarousel />
     </>

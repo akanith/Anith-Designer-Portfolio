@@ -6,7 +6,6 @@ import TornPaperStrip from "@/components/editorial/TornPaperStrip";
 import LogoGallery from "@/components/editorial/LogoGallery";
 import ServicesEditorial from "@/components/editorial/ServicesEditorial";
 import DarkShowcase from "@/components/editorial/DarkShowcase";
-import StudioAbout from "@/components/editorial/StudioAbout";
 import GraciasClosing from "@/components/editorial/GraciasClosing";
 import ProjectModal from "@/components/portfolio/ProjectModal";
 import { Project } from "@/types";
@@ -90,13 +89,10 @@ export default function HomePage() {
       {/* 4. Dedicated Official Services Section (Graphic Design, Multicolour Printing, AI Video) */}
       <ServicesEditorial />
 
-      {/* 5. Dark Project Showcase — Exhibition with AI Video Player & Print Showcase */}
+      {/* 5. Dark Showcase — Motion Lab, Prepress Printing & Social Media Creatives */}
       <DarkShowcase onSelectProject={setSelectedProject} />
 
-      {/* 6. Studio and About Section */}
-      <StudioAbout />
-
-      {/* 7. Contact and Closing Screen (Huge GRACIAS heading & verified contacts) */}
+      {/* 6. Contact and Closing Screen (Huge GRACIAS heading & verified contacts) */}
       <GraciasClosing />
 
       {/* Interactive Full-Screen Project Case Study Modal */}

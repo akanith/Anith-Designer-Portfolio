@@ -320,6 +320,8 @@ export default function LogoGallery({ onSelectProject }: LogoGalleryProps) {
       id="logos" 
       className="relative w-full py-20 sm:py-28 px-4 sm:px-6 md:px-12 bg-white border-b border-neutral-300 overflow-hidden"
     >
+      {/* Anchor identifier for Our Work navigation */}
+      <div id="work" className="absolute -top-24 left-0 pointer-events-none" />
       {/* Background Architectural Grid Pattern */}
       <div className="absolute inset-0 architectural-grid opacity-60 pointer-events-none" />
 

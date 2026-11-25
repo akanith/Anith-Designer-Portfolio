@@ -21,11 +21,11 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { label: "Home", href: "#hero" },
-    { label: "Our Work", href: "#work" },
-    { label: "Services", href: "#services" },
-    { label: "About", href: "#about" },
-    { label: "Contact", href: "#contact" },
+    { label: "Home", href: "/#hero" },
+    { label: "Our Work", href: "/work" },
+    { label: "Services", href: "/#services" },
+    { label: "About", href: "/about" },
+    { label: "Contact", href: "/#contact" },
   ];
 
   return (
@@ -70,28 +70,28 @@ export default function Navbar() {
           {/* Desktop Navigation Links */}
           <div className="hidden md:flex items-center gap-1 font-mono text-xs tracking-wider uppercase text-ink-secondary">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.label}
                 href={link.href}
                 className="relative whitespace-nowrap rounded-full px-3.5 py-1.5 text-ink-secondary transition-colors duration-200 hover:text-ink hover:bg-black/5"
                 data-cursor="hover"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </div>
 
           {/* Right Action: Start a Project Button & Mobile Toggle */}
           <div className="flex items-center gap-2">
-            <a
-              href="#contact"
+            <Link
+              href="/#contact"
               className="group hidden sm:inline-flex items-center gap-2 rounded-full bg-ink px-4 sm:px-5 py-2 font-mono text-xs font-bold uppercase tracking-wider text-white whitespace-nowrap transition-all duration-300 hover:bg-[#00B8C8] hover:text-[#171717] hover:shadow-gallery hover:scale-[1.02] active:scale-[0.98]"
               data-cursor="hover"
               data-cursor-text="TALK"
             >
               <span className="whitespace-nowrap">Start a Project</span>
               <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-            </a>
+            </Link>
 
             {/* Mobile Menu Trigger */}
             <button
@@ -142,30 +142,33 @@ export default function Navbar() {
             {/* Links list */}
             <div className="flex flex-col gap-6 my-auto">
               {navLinks.map((link, idx) => (
-                <motion.a
+                <motion.div
                   key={link.label}
-                  href={link.href}
-                  onClick={() => setMobileMenuOpen(false)}
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: idx * 0.08 }}
-                  className="font-display text-3xl font-extrabold tracking-tight text-ink hover:text-[#00B8C8] transition-colors"
                 >
-                  {link.label}
-                </motion.a>
+                  <Link
+                    href={link.href}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="font-display text-3xl font-extrabold tracking-tight text-ink hover:text-[#00B8C8] transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                </motion.div>
               ))}
             </div>
 
             {/* Bottom contact CTA */}
             <div className="border-t border-ink-border pt-6">
-              <a
-                href="#contact"
+              <Link
+                href="/#contact"
                 onClick={() => setMobileMenuOpen(false)}
                 className="flex items-center justify-center gap-2 rounded-full bg-[#171717] hover:bg-[#00B8C8] hover:text-[#171717] p-4 font-mono text-xs font-bold uppercase tracking-wider text-white shadow-gallery transition-colors"
               >
                 <span>Start a Project</span>
                 <ArrowUpRight className="h-4 w-4" />
-              </a>
+              </Link>
 
               <div className="mt-4 text-center font-mono text-[11px] text-ink-muted">
                 {siteConfig.contact.email} • {siteConfig.contact.phone}

@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { siteConfig } from "@/data/siteConfig";
 import { ArrowUp, ArrowUpRight } from "lucide-react";
 
@@ -47,29 +48,29 @@ export default function Footer() {
             </span>
             <ul className="space-y-2.5 font-mono text-xs">
               <li>
-                <a href="#hero" className="hover:text-[#00B8C8] transition-colors">
+                <Link href="/#hero" className="hover:text-[#00B8C8] transition-colors">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#work" className="hover:text-[#00B8C8] transition-colors">
+                <Link href="/work" className="hover:text-[#00B8C8] transition-colors">
                   Our Work & Showcase
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#services" className="hover:text-[#00B8C8] transition-colors">
+                <Link href="/#services" className="hover:text-[#00B8C8] transition-colors">
                   Official Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#about" className="hover:text-[#00B8C8] transition-colors">
+                <Link href="/about" className="hover:text-[#00B8C8] transition-colors">
                   About ThinkLoom
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#contact" className="hover:text-[#00B8C8] transition-colors">
+                <Link href="/#contact" className="hover:text-[#00B8C8] transition-colors">
                   Contact & Collaborate
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

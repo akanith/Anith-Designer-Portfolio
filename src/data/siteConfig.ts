@@ -32,10 +32,10 @@ export const siteConfig = {
     },
   },
   navigation: [
-    { label: "Home", href: "#hero" },
-    { label: "Our Work", href: "#work" },
-    { label: "Services", href: "#services" },
-    { label: "About", href: "#about" },
-    { label: "Contact", href: "#contact" },
+    { label: "Home", href: "/#hero" },
+    { label: "Our Work", href: "/work" },
+    { label: "Services", href: "/#services" },
+    { label: "About", href: "/about" },
+    { label: "Contact", href: "/#contact" },
   ],
 };
