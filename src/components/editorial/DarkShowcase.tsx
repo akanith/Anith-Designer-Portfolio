@@ -8,7 +8,7 @@ import {
 } from "lucide-react";
 import { projects } from "@/data/projects";
 import { Project } from "@/types";
-import MotionLab from "@/components/editorial/MotionLab";
+import FilmCoverflow from "@/components/editorial/FilmCoverflow";
 import SocialCreativesCarousel from "@/components/editorial/SocialCreativesCarousel";
 
 interface DarkShowcaseProps {
@@ -62,7 +62,7 @@ export default function DarkShowcase({ onSelectProject }: DarkShowcaseProps) {
         <div className="absolute inset-0 dark-technical-grid opacity-40 pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 relative z-10">
-          <MotionLab />
+          <FilmCoverflow />
         </div>
       </section>
 
