@@ -11,7 +11,7 @@ import { projects } from "@/data/projects";
 import { Project } from "@/types";
 import MotionLab from "@/components/editorial/MotionLab";
 import SocialCreativesCarousel from "@/components/editorial/SocialCreativesCarousel";
-import ProjectShowcaseHorizontal from "@/components/editorial/ProjectShowcaseHorizontal";
+import ProjectShowcasePerspective from "@/components/editorial/ProjectShowcasePerspective";
 
 interface DarkShowcaseProps {
   onSelectProject?: (project: Project) => void;
@@ -57,9 +57,9 @@ export default function DarkShowcase({ onSelectProject }: DarkShowcaseProps) {
   return (
     <>
       {/* =========================================================================
-          CHAPTER 01: PROJECT SHOWCASE — SCROLL-DRIVEN HORIZONTAL SCROLL GALLERY
+          CHAPTER 01: PROJECT SHOWCASE — 3D PERSPECTIVE CARD GALLERY
           ========================================================================= */}
-      <ProjectShowcaseHorizontal onSelectProject={onSelectProject} />
+      <ProjectShowcasePerspective onSelectProject={onSelectProject} />
 
       {/* =========================================================================
           CHAPTER 02: THINKLOOM / MOTION LAB (CINEMATIC FILM EXHIBITION)
